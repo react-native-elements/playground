@@ -173,10 +173,10 @@ export default function App() {
           <Route key={idx} path={elm.path} exact component={elm.component} />
         );
       })}
-      <Route path="/explore">
+      <Route exact path="/explore">
         <ExplorePage />
       </Route>
-      <Route>
+      <Route exact path="/">
         <HomePage />
       </Route>
     </Switch>

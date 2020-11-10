@@ -2,6 +2,7 @@
   "name": "react-native-elements-playground",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://react-native-elements.github.io/playground",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
@@ -26,7 +27,7 @@
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
     "eject": "react-scripts eject",
-    "predeploy":"npm run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
