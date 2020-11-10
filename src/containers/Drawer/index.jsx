@@ -15,7 +15,7 @@ import ListItemText from "@material-ui/core/ListItemText";
 import MenuIcon from "@material-ui/icons/Menu";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
-import { Container } from "@material-ui/core";
+import { Button, Container } from "@material-ui/core";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 
 import Navigation from "../Navigation";
@@ -54,7 +54,7 @@ const useStyles = makeStyles((theme) => ({
   },
   content: {
     flexGrow: 1,
-    padding: theme.spacing(3),
+    paddingTop: "1.5rem",
   },
 }));
 
@@ -120,6 +120,9 @@ function ResponsiveDrawer(props) {
             </Typography>
           </Link>
           <div style={{ marginLeft: "auto" }}>
+            <a href="https://reactnativeelements.com/" target="_blank">
+              <Button color="inherit">Docs</Button>
+            </a>
             <IconButton
               color="inherit"
               rel="noopener noreferrer"

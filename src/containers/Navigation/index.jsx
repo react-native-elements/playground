@@ -8,6 +8,8 @@ import {
   Redirect,
 } from "react-router-dom";
 
+import Footer from "../../components/Footer";
+
 // Pages
 import HomePage from "../../pages/home";
 import ExplorePage from "../../pages/explore";
@@ -167,18 +169,21 @@ export const Components_Index = [
 
 export default function App() {
   return (
-    <Switch>
-      {Components_Index.map((elm, idx) => {
-        return (
-          <Route key={idx} path={elm.path} exact component={elm.component} />
-        );
-      })}
-      <Route exact path="/explore">
-        <ExplorePage />
-      </Route>
-      <Route exact path="/">
-        <HomePage />
-      </Route>
-    </Switch>
+    <React.Fragment>
+      <Switch>
+        {Components_Index.map((elm, idx) => {
+          return (
+            <Route key={idx} path={elm.path} exact component={elm.component} />
+          );
+        })}
+        <Route exact path="/explore">
+          <ExplorePage />
+        </Route>
+        <Route exact path="/">
+          <HomePage />
+        </Route>
+      </Switch>
+      <Footer />
+    </React.Fragment>
   );
 }
