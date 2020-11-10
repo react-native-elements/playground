@@ -179,7 +179,7 @@ export default function App() {
         <Route exact path="/explore">
           <ExplorePage />
         </Route>
-        <Route exact path="/">
+        <Route>
           <HomePage />
         </Route>
       </Switch>
