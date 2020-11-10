@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/playground/static/css/main.692d75bb.chunk.css",
-    "main.js": "/playground/static/js/main.bf474912.chunk.js",
-    "main.js.map": "/playground/static/js/main.bf474912.chunk.js.map",
+    "main.js": "/playground/static/js/main.e5446fea.chunk.js",
+    "main.js.map": "/playground/static/js/main.e5446fea.chunk.js.map",
     "runtime-main.js": "/playground/static/js/runtime-main.239a26e5.js",
     "runtime-main.js.map": "/playground/static/js/runtime-main.239a26e5.js.map",
-    "static/js/2.629a3ecf.chunk.js": "/playground/static/js/2.629a3ecf.chunk.js",
-    "static/js/2.629a3ecf.chunk.js.map": "/playground/static/js/2.629a3ecf.chunk.js.map",
+    "static/js/2.985a6d03.chunk.js": "/playground/static/js/2.985a6d03.chunk.js",
+    "static/js/2.985a6d03.chunk.js.map": "/playground/static/js/2.985a6d03.chunk.js.map",
     "static/js/3.22d426b0.chunk.js": "/playground/static/js/3.22d426b0.chunk.js",
     "static/js/3.22d426b0.chunk.js.map": "/playground/static/js/3.22d426b0.chunk.js.map",
     "static/js/4.d6b8aa1a.chunk.js": "/playground/static/js/4.d6b8aa1a.chunk.js",
@@ -14,10 +14,10 @@
     "static/js/5.24eececd.chunk.js": "/playground/static/js/5.24eececd.chunk.js",
     "static/js/5.24eececd.chunk.js.map": "/playground/static/js/5.24eececd.chunk.js.map",
     "index.html": "/playground/index.html",
-    "precache-manifest.c0bb6b0e20cb91ac36df02df1af1f7f6.js": "/playground/precache-manifest.c0bb6b0e20cb91ac36df02df1af1f7f6.js",
+    "precache-manifest.8efa55de1c92e9d9b8734778067e6806.js": "/playground/precache-manifest.8efa55de1c92e9d9b8734778067e6806.js",
     "service-worker.js": "/playground/service-worker.js",
     "static/css/main.692d75bb.chunk.css.map": "/playground/static/css/main.692d75bb.chunk.css.map",
-    "static/js/2.629a3ecf.chunk.js.LICENSE.txt": "/playground/static/js/2.629a3ecf.chunk.js.LICENSE.txt",
+    "static/js/2.985a6d03.chunk.js.LICENSE.txt": "/playground/static/js/2.985a6d03.chunk.js.LICENSE.txt",
     "static/media/FontAwesome.ttf": "/playground/static/media/FontAwesome.b06871f2.ttf",
     "static/media/MaterialCommunityIcons.ttf": "/playground/static/media/MaterialCommunityIcons.6a2ddad1.ttf",
     "static/media/MaterialIcons.ttf": "/playground/static/media/MaterialIcons.a37b0c01.ttf",
@@ -30,8 +30,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.239a26e5.js",
-    "static/js/2.629a3ecf.chunk.js",
+    "static/js/2.985a6d03.chunk.js",
     "static/css/main.692d75bb.chunk.css",
-    "static/js/main.bf474912.chunk.js"
+    "static/js/main.e5446fea.chunk.js"
   ]
 }
