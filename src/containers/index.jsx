@@ -3,7 +3,6 @@ import Drawer from "./Drawer";
 import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 import { HashRouter as Router } from "react-router-dom";
 
-
 const theme = createMuiTheme({
   palette: {
     primary: {
@@ -14,7 +13,7 @@ const theme = createMuiTheme({
 export default function () {
   return (
     <ThemeProvider theme={theme}>
-      <Router basename={"/"}>
+      <Router basename={process.env.PUBLIC_URL}>
         <Drawer />
       </Router>
     </ThemeProvider>
