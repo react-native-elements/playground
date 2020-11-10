@@ -13,7 +13,7 @@ const theme = createMuiTheme({
 export default function () {
   return (
     <ThemeProvider theme={theme}>
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Drawer />
       </Router>
     </ThemeProvider>
