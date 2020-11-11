@@ -55,6 +55,7 @@ const useStyles = makeStyles((theme) => ({
   content: {
     flexGrow: 1,
     paddingTop: "1.5rem",
+    minHeight: "100vh",
   },
 }));
 

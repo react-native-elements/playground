@@ -18,6 +18,7 @@ function Footer() {
         background: "#212121",
         color: "#fafafa",
         padding: "1rem",
+        bottom: 0,
       }}
     >
       <Grid container spacing={5} justify="center">
