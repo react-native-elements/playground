@@ -7,6 +7,7 @@ import {
   Link,
   Redirect,
 } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 import Footer from "../../components/Footer";
 
@@ -173,10 +174,20 @@ export default function App() {
       <Switch>
         {Components_Index.map((elm, idx) => {
           return (
-            <Route key={idx} path={elm.path} exact component={elm.component} />
+            <Route key={idx} path={elm.path} exact>
+              <Helmet>
+                <title>
+                  {elm.name} | Playground 🚀 - React Native Elements
+                </title>
+              </Helmet>
+              <elm.component />
+            </Route>
           );
         })}
         <Route exact path="/explore">
+          <Helmet>
+            <title>Explore | Playground 🚀 - React Native Elements</title>
+          </Helmet>
           <ExplorePage />
         </Route>
         <Route>
