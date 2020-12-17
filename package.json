@@ -1,8 +1,8 @@
 {
   "name": "react-native-elements-playground",
-  "version": "0.1.0",
+  "version": "3.0.0",
   "private": true,
-  "homepage": "https://react-native-elements.github.io/playground",
+  "homepage": "https://react-native-elements.js.org",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
@@ -14,7 +14,7 @@
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-lottie": "^1.2.3",
-    "react-native-elements": "https://github.com/react-native-elements/react-native-elements#next",
+    "react-native-elements": "https://github.com/react-native-elements/react-native-elements#master",
     "react-native-vector-icons": "^6.7.0",
     "react-native-web": "^0.12.0",
     "react-native-web-linear-gradient": "^1.1.1",
