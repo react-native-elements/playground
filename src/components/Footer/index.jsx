@@ -8,6 +8,7 @@ import {
   Button,
   Divider,
 } from "@material-ui/core";
+import pjson from "../../../package.json";
 
 function Footer() {
   return (
@@ -80,6 +81,7 @@ function Footer() {
               src="https://img.shields.io/npm/dm/react-native-elements?style=social"
             />
           </a>
+          <Typography variant="caption">"v"{pjson.version}</Typography>
         </Grid>
       </Grid>
     </footer>
