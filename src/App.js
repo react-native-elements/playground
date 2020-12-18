@@ -1,10 +1,12 @@
 import React from "react";
+import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 import Root from "./containers";
 import "./App.css";
 function App() {
   return (
-    <>
+    <SafeAreaProvider>
+      
       <style type="text/css">{`
         @font-face {
           font-family: 'MaterialIcons';
@@ -21,7 +23,7 @@ function App() {
         }
       `}</style>
       <Root />
-    </>
+    </SafeAreaProvider>
   );
 }
 
