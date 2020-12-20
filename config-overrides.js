@@ -16,7 +16,7 @@ module.exports = override(
       path.resolve(__dirname, "src"),
     ],
     addWebpackAlias({
-      "react-native/Libraries/Components/UnimplementedViews/UnimplementedView$":
+      "react-native/Libraries/Components/UnimplementedViews/UnimplementedView":
         "react-native-web/dist/modules/UnimplementedView",
       "react-native$": "react-native-web",
       "react-native-linear-gradient": "react-native-web-linear-gradient",
