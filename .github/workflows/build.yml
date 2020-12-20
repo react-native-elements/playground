@@ -13,8 +13,6 @@ jobs:
         run: |
           yarn
           yarn run build
-      - name: Patch Modules
-        run: |
           cp patches/@react-native-community/toolbar-android/js/ToolbarAndroid.web.js node_modules/@react-native-community/toolbar-android/js/ToolbarAndroid.web.js
 
       - name: Deploy 🚀
