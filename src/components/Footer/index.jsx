@@ -81,7 +81,7 @@ function Footer() {
               src="https://img.shields.io/npm/dm/react-native-elements?style=social"
             />
           </a>
-          <Typography variant="caption">"v"{pjson.version}</Typography>
+          <Typography variant="caption">v{pjson.version}</Typography>
         </Grid>
       </Grid>
     </footer>
