@@ -2,7 +2,7 @@ import * as React from "react";
 import { useState } from "react";
 import { View } from "react-native";
 import { Header, Icon } from "react-native-elements";
-
+import { SafeAreaProvider } from "react-native-safe-area-context";
 import Playground from "../../components/playground";
 import { useView, PropTypes } from "react-view";
 
@@ -95,12 +95,17 @@ const HeaderPlayground = () => {
       "react-native-elements": {
         named: ["Header", "Icon"],
       },
+      "react-native-safe-area-context": {
+        named: ["SafeAreaProvider"],
+      },
     },
   });
 
   return (
     <React.Fragment>
-      <Playground params={params} />
+      <SafeAreaProvider>
+        <Playground params={params} />
+      </SafeAreaProvider>
     </React.Fragment>
   );
 };
