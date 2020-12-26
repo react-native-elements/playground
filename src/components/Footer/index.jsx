@@ -23,7 +23,7 @@ function Footer() {
       }}
     >
       <Grid container spacing={5} justify="center">
-        <Grid item xs={12} md={6} lg={4} xl={3}>
+        <Grid item xs={12} md={6} lg={4}>
           <Typography variant="h4" style={{ marginBottom: 10 }}>
             Playground 🚀
           </Typography>
@@ -40,7 +40,7 @@ function Footer() {
           <a href="https://reactnativeelements.com/" target="_blank">
             <Typography>Official Docs</Typography>
           </a>
-
+          <br />
           <a
             href="https://opencollective.com/react-native-elements/sponsor/4/website"
             rel="nofollow"
@@ -52,8 +52,16 @@ function Footer() {
               data-canonical-src="https://opencollective.com/react-native-elements/sponsor/4/avatar"
             />
           </a>
+          <br />
+
+          <a href="https://www.netlify.com">
+            <img
+              src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg"
+              alt="Deploys by Netlify"
+            />
+          </a>
         </Grid>
-        <Grid item xs={12} md={6} lg={4} xl={3}>
+        <Grid item xs={12} md={6} lg={4}>
           <a
             href="https://github.com/react-native-elements/react-native-elements/"
             target="_blank"
@@ -81,7 +89,12 @@ function Footer() {
               src="https://img.shields.io/npm/dm/react-native-elements?style=social"
             />
           </a>
-          <Typography variant="caption">v{pjson.version}</Typography>
+          <br />
+
+          <Typography variant="caption">
+            Playground is using react-native-elements v{pjson.version}
+          </Typography>
+          <br />
         </Grid>
       </Grid>
     </footer>
