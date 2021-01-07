@@ -5,7 +5,7 @@ import PropDrawer from "../../components/PropDrawer";
 
 import Playground from "./badge.playground.jsx";
 
-const Content = lazy(() => importMDX("./badge.mdx"));
+const Content = lazy(() => importMDX("../Props/badge.md"));
 export default function TilePlayground() {
   return (
     <div>
