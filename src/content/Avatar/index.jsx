@@ -1,21 +1,20 @@
-import React, { lazy, Component, Suspense } from "react";
-import Playground from "./avatar.playground.jsx";
+import React, { lazy, Suspense } from "react";
 import { importMDX } from "mdx.macro";
-import PropDrawer from "../../components/PropDrawer";
 
-const Content = lazy(() => importMDX("./avatar.mdx"));
-class App extends Component {
-  render() {
-    return (
-      <div>
-        <Playground />
-        <Suspense fallback={<div>Loading...</div>}>
-          <PropDrawer>
-            <Content />
-          </PropDrawer>
-        </Suspense>
-      </div>
-    );
-  }
+import PropDrawer from "../../components/PropDrawer";
+import Playground from "./avatar.playground.jsx";
+
+const Content = lazy(() => importMDX("../Props/avatar.md"));
+
+export default function Avatar() {
+  return (
+    <div>
+      <Playground />
+      <Suspense fallback={<div>Loading...</div>}>
+        <PropDrawer>
+          <Content />
+        </PropDrawer>
+      </Suspense>
+    </div>
+  );
 }
-export default App;

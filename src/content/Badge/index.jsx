@@ -1,8 +1,9 @@
 import React, { lazy, Suspense } from "react";
 import { importMDX } from "mdx.macro";
 
-import Playground from "./badge.playground.jsx";
 import PropDrawer from "../../components/PropDrawer";
+
+import Playground from "./badge.playground.jsx";
 
 const Content = lazy(() => importMDX("./badge.mdx"));
 export default function TilePlayground() {
