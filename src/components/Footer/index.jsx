@@ -41,18 +41,6 @@ function Footer() {
             <Typography>Official Docs</Typography>
           </a>
           <br />
-          <a
-            href="https://opencollective.com/react-native-elements/sponsor/4/website"
-            rel="nofollow"
-            target="_blank"
-          >
-            <img
-              src="https://camo.githubusercontent.com/b443d021e16d36526e1e49c8a9ec2a162245a625ee7699f557e28ddfbe79176f/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f72656163742d6e61746976652d656c656d656e74732f73706f6e736f722f342f617661746172"
-              alt="React Native Elements Backer"
-              data-canonical-src="https://opencollective.com/react-native-elements/sponsor/4/avatar"
-            />
-          </a>
-          <br />
 
           <a href="https://www.netlify.com">
             <img
