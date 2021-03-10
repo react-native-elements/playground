@@ -1,0 +1,33 @@
+.header__home{
+    font-size: calc(2rem + 6 * ((100vw - 320px) / 680));
+}
+.headerbottom__home{
+    font-weight: 200;
+     font-style: italic;
+}
+.explore_now{
+    width: 100%;
+     text-align: center;
+      margin-bottom: 2rem;
+}
+.divider{
+    margin: 3vh 0;
+}
+.grid{
+    justify-content: space-evenly;
+}
+.paper{
+    padding: 14px 7px;
+     height: 100%;
+     
+}
+.inside_paper{
+    bottom: 0;
+     margin-top: 1rem;
+}
+
+.line{
+    color: grey;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}

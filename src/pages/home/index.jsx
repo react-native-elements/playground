@@ -1,6 +1,7 @@
 import React from "react";
 import { Typography, Grid, Paper, Divider, Button } from "@material-ui/core";
 import { Link } from "react-router-dom";
+import  "./home.css";
 
 import LBannerAnimation from "./animation.jsx";
 
@@ -11,15 +12,13 @@ function HomePage() {
         <Grid item md={6} sm={12}>
           <Typography
             variant="h2"
-            style={{
-              fontSize: "calc(2rem + 6 * ((100vw - 320px) / 680))",
-            }}
+            className="header__home"
           >
             Exploring possibilities
           </Typography>
           <Typography
             variant="h6"
-            style={{ fontWeight: "200", fontStyle: "italic" }}
+            className="headerbottom__home"
           >
             with React Native Elements
           </Typography>
@@ -30,7 +29,7 @@ function HomePage() {
           </div>
         </Grid>
       </Grid>
-      <div style={{ width: "100%", textAlign: "center", marginBottom: "2rem" }}>
+      <div className="explore_now">
         <Link to="/explore">
           <Button variant="outlined" color="secondary">
             <Typography variant="h6">Explore Now 🌇</Typography>
@@ -47,14 +46,17 @@ function HomePage() {
         })}
       </Grid>
 
-      <Divider style={{ margin: "3vh 0" }} />
+      <Divider className="divider" />
+      <hr className="line"/>
       <Grid
         container
         spacing={5}
         justify="center"
-        style={{ justifyContent: "space-evenly" }}
+        className="grid"
       >
+    
         <Grid item xs={12} md={7} lg={6}>
+      
           <Typography variant="h5">Why?</Typography>
           <Typography>
             React Native Elements houses a lot of components, and these
@@ -85,7 +87,7 @@ export default HomePage;
 
 const FeatureCard = (props) => {
   return (
-    <Paper style={{ padding: "14px 7px", height: "100%" }}>
+    <Paper className="paper">
       <img
         style={{
           width: "70%",
@@ -95,7 +97,7 @@ const FeatureCard = (props) => {
         }}
         src={props.banner}
       />
-      <div style={{ bottom: 0, marginTop: "1rem" }}>
+      <div className="inside_paper">
         <Typography variant="h5">{props.title}</Typography>
         <Typography>{props.content}</Typography>
       </div>
