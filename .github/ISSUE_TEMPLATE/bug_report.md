@@ -9,19 +9,19 @@ Before filling out an issue:
 2. If any section is left blank, there is a high possibility that the ticket will be closed. If you want your issue to get solved, you need to fill out ALL of the below fields. Otherwise, the ticket will likely be closed as not providing enough info.
 -->
 
-- **Explain what you did (Required)**
+**Explain what you did (Required)**
 
 <!-- What you were trying to accomplish. -->
 
-- **Expected behavior (Required)**
+**Expected behavior (Required)**
 
 <!-- A clear and concise description of what you expected to happen. -->
 
-- **Describe the bug (Required)**
+**Describe the bug (Required)**
 
 <!--  A clear and concise description of what the bug is. -->
 
-- **To Reproduce (Required)**
+**To Reproduce (Required)**
 
 > We highly recommend that you re-create the bug on [Snack](https://snack.expo.io). If not, list the steps that a reviewer can take to reproduce the behaviour:
 
@@ -40,11 +40,11 @@ https://snack.expo.io/xxx
 ```
 -->
 
-- **Screenshots (Required)**
+**Screenshots (Required)**
 
 <!-- If applicable, add screenshots to help explain your problem. -->
 
-- **Your Environment (Required):**
+**Your Environment (Required):**
 
 | software              | version |
 | --------------------- | ------- |
