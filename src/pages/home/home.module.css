@@ -31,3 +31,9 @@
     margin-top: 20px;
     margin-bottom: 15px;
 }
+.image{
+    width: 70%;
+          min-height: 250;
+          margin: auto;
+          display: flex;
+}

@@ -1,7 +1,7 @@
 import React from "react";
 import { Typography, Grid, Paper, Divider, Button } from "@material-ui/core";
 import { Link } from "react-router-dom";
-import  "./home.css";
+import styles from "./home.module.css";
 
 import LBannerAnimation from "./animation.jsx";
 
@@ -12,13 +12,13 @@ function HomePage() {
         <Grid item md={6} sm={12}>
           <Typography
             variant="h2"
-            className="header__home"
+            className={styles.header__home}
           >
             Exploring possibilities
           </Typography>
           <Typography
             variant="h6"
-            className="headerbottom__home"
+            className={styles.headerbottom__home}
           >
             with React Native Elements
           </Typography>
@@ -29,7 +29,7 @@ function HomePage() {
           </div>
         </Grid>
       </Grid>
-      <div className="explore_now">
+      <div className={styles.explore_now}>
         <Link to="/explore">
           <Button variant="outlined" color="secondary">
             <Typography variant="h6">Explore Now 🌇</Typography>
@@ -46,8 +46,8 @@ function HomePage() {
         })}
       </Grid>
 
-      <Divider className="divider" />
-      <hr className="line"/>
+      <Divider className={styles.divider} />
+      <hr className={styles.line}/>
       <Grid
         container
         spacing={5}
@@ -87,14 +87,8 @@ export default HomePage;
 
 const FeatureCard = (props) => {
   return (
-    <Paper className="paper">
-      <img
-        style={{
-          width: "70%",
-          minHeight: 250,
-          margin: "auto",
-          display: "flex",
-        }}
+    <Paper className={styles.paper}>
+      <img className={styles.image}
         src={props.banner}
       />
       <div className="inside_paper">
