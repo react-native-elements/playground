@@ -9,7 +9,7 @@ import {
   Divider,
 } from "@material-ui/core";
 import pjson from "../../../package.json";
-import "./Footer.css";
+import styles from "./Footer.module.css";
 
 function Footer() {
   return (
@@ -38,7 +38,7 @@ function Footer() {
             <img
               src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg"
               alt="Deploys by Netlify"
-              className="netlify_img"
+              className={styles.netlify_img}
             />
           </a>
         </Grid>
@@ -48,25 +48,28 @@ function Footer() {
             target="_blank"
           >
             <Typography variant="h6">React Native Elements</Typography>
-            <Typography variant="subtitle1" className="footer_product_info">
+            <Typography
+              variant="subtitle1"
+              className={styles.footer_product_info}
+            >
               Cross-Platform React Native UI Toolkit
             </Typography>
 
             <img
               src={require("../../assets/RNE_Logo.png")}
-              className="footer_product_img"
+              className={styles.footer_product_img}
             />
 
             <img
               alt="GitHub stars"
               src="https://img.shields.io/github/stars/react-native-elements/react-native-elements?style=social"
-              className="footer_github_img"
+              className={styles.footer_github_img}
             />
             {"  "}
             <img
               alt="npm"
               src="https://img.shields.io/npm/dm/react-native-elements?style=social"
-              className="footer_github_img"
+              className={styles.footer_github_img}
             />
           </a>
           <br />
