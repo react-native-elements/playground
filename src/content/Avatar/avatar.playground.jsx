@@ -50,12 +50,6 @@ const AvatarPlay = () => {
         type: PropTypes.Boolean,
         description: "Indicates that the button is disabled",
       },
-      showAccessory: {
-        value: true,
-        type: PropTypes.Boolean,
-        description: "Indicates that the button is disabled",
-      },
-
       size: {
         value: "large",
         options: {
