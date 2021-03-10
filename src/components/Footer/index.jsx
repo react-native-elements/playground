@@ -9,19 +9,11 @@ import {
   Divider,
 } from "@material-ui/core";
 import pjson from "../../../package.json";
+import "./Footer.css";
 
 function Footer() {
   return (
-    <footer
-      style={{
-        marginTop: "2rem",
-        width: "100%",
-        background: "#212121",
-        color: "#fafafa",
-        padding: "1rem",
-        bottom: 0,
-      }}
-    >
+    <footer>
       <Grid container spacing={5} justify="center">
         <Grid item xs={12} md={6} lg={4}>
           <Typography variant="h4" style={{ marginBottom: 10 }}>
@@ -46,6 +38,7 @@ function Footer() {
             <img
               src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg"
               alt="Deploys by Netlify"
+              className="netlify_img"
             />
           </a>
         </Grid>
@@ -55,26 +48,25 @@ function Footer() {
             target="_blank"
           >
             <Typography variant="h6">React Native Elements</Typography>
-            <Typography
-              variant="subtitle1"
-              style={{ fontWeight: "200", fontStyle: "italic" }}
-            >
+            <Typography variant="subtitle1" className="footer_product_info">
               Cross-Platform React Native UI Toolkit
             </Typography>
 
             <img
               src={require("../../assets/RNE_Logo.png")}
-              style={{ width: 150, padding: "1rem 0", display: "block" }}
+              className="footer_product_img"
             />
 
             <img
               alt="GitHub stars"
               src="https://img.shields.io/github/stars/react-native-elements/react-native-elements?style=social"
+              className="footer_github_img"
             />
             {"  "}
             <img
               alt="npm"
               src="https://img.shields.io/npm/dm/react-native-elements?style=social"
+              className="footer_github_img"
             />
           </a>
           <br />
