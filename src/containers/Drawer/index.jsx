@@ -83,6 +83,7 @@ function ResponsiveDrawer(props) {
           <Link
             key={elm.name}
             to={elm.path}
+            onClick={handleDrawerToggle}
           >
             <ListItem button key={elm.name}>
               <ListItemText primary={elm.name} />
