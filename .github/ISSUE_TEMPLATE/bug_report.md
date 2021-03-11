@@ -25,20 +25,15 @@ Before filling out an issue:
 
 > We highly recommend that you re-create the bug on [Snack](https://snack.expo.io). If not, list the steps that a reviewer can take to reproduce the behaviour:
 
-<!--
 Example:
+ 
+**Snack** : https://snack.expo.io/xxx
 
-```bash
-# Snack
-https://snack.expo.io/xxx
-
-# Steps
+- Steps
 1. Go to '...'
 2. Click on '....'
 3. Scroll down to '....'
 4. See error
-```
--->
 
 **Screenshots (Required)**
 
