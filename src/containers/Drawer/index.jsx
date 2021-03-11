@@ -65,8 +65,12 @@ function ResponsiveDrawer(props) {
   const theme = useTheme();
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
-  const handleDrawerToggle = () => {
-    setMobileOpen(!mobileOpen);
+  const handleDrawerToggle = (value) => {
+    if(value === false){
+      setMobileOpen(false);
+    } else {
+      setMobileOpen(true);
+    }
   };
 
   const drawer = (
@@ -83,6 +87,7 @@ function ResponsiveDrawer(props) {
           <Link
             key={elm.name}
             to={elm.path}
+            onClick={() => handleDrawerToggle(false)}
           >
             <ListItem button key={elm.name}>
               <ListItemText primary={elm.name} />
@@ -138,7 +143,7 @@ function ResponsiveDrawer(props) {
             variant="temporary"
             anchor={theme.direction === "rtl" ? "right" : "left"}
             open={mobileOpen}
-            onClose={handleDrawerToggle}
+            onClose={() => handleDrawerToggle(false)}
             classes={{
               paper: classes.drawerPaper,
             }}
