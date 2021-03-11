@@ -22,6 +22,10 @@ import Navigation from "../Navigation";
 import { Link } from "react-router-dom";
 import { Components_Index } from "../Navigation";
 
+import styles from "./ResponsiveDrawer.module.css";
+
+// import { useGatsbyListItemStyles } from "@mui-treasury/styles/listItem/gatsby";
+
 const drawerWidth = 200;
 
 const useStyles = makeStyles((theme) => ({
@@ -64,6 +68,7 @@ function ResponsiveDrawer(props) {
   const classes = useStyles();
   const theme = useTheme();
   const [mobileOpen, setMobileOpen] = React.useState(false);
+  const [selectedIndex, setSelectedIndex] = React.useState(-1);
 
   const handleDrawerToggle = (value) => {
     if (value !== null) {
@@ -73,11 +78,15 @@ function ResponsiveDrawer(props) {
     }
   };
 
+  const handleListItemClick = (event, index) => {
+    setSelectedIndex(index);
+  };
+
   const drawer = (
     <div>
       <div style={{ padding: "0.5rem" }}>
         <Link to="/">
-          <Typography style={{ fontWeight: 100 }} variant="h5">
+          <Typography className={styles.brand_name} variant="h5">
             Playground 🚀
           </Typography>
         </Link>
@@ -89,7 +98,12 @@ function ResponsiveDrawer(props) {
             to={elm.path}
             onClick={() => handleDrawerToggle(false)}
           >
-            <ListItem button key={elm.name}>
+            <ListItem
+              button
+              key={elm.name}
+              selected={selectedIndex === index}
+              onClick={(event) => handleListItemClick(event, index)}
+            >
               <ListItemText primary={elm.name} />
             </ListItem>
           </Link>
