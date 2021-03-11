@@ -1,0 +1,10 @@
+.propdrawer{
+    position: fixed;
+    right: 0.5rem;
+    bottom: 1rem;
+}
+.propdrawer__child{
+    width: 70vw;
+    max-width: 700;
+    padding-left: 1rem;
+}

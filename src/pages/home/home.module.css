@@ -15,12 +15,21 @@
 }
 .grid{
     justify-content: space-evenly;
+    
 }
+
+    
 .paper{
     padding: 14px 7px;
      height: 100%;
      
 }
+.paper:hover{
+    transform: scale(1.05);
+    transition: transform 0.6s;
+    
+}
+
 .inside_paper{
     bottom: 0;
      margin-top: 1rem;

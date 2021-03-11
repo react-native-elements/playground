@@ -52,7 +52,7 @@ function HomePage() {
         container
         spacing={5}
         justify="center"
-        className="grid"
+        className={styles.grid}
       >
     
         <Grid item xs={12} md={7} lg={6}>

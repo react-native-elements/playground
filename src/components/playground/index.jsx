@@ -1,5 +1,5 @@
 import * as React from "react";
-
+import styles from "./playground.module.css";
 import {
   Compiler,
   Knobs,
@@ -12,12 +12,7 @@ import {
 export default ({ params }) => {
   return (
     <React.Fragment>
-      <div
-        style={{
-          border: "1px dashed #ccc",
-          position:'relative'
-        }}
-      >
+      <div className={styles.playground}>
         <Compiler
           {...params.compilerProps}
           minHeight={62}
