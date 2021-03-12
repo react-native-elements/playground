@@ -58,13 +58,6 @@ const useStyles = makeStyles((theme) => ({
     minHeight: "100vh",
   },
 
-  brand_name: {
-    fontWeight: "100",
-    padding: "8px 0",
-    marginLeft: "5px",
-    borderBottom: "3px solid #2089dc",
-  },
-
   sideListItem: {
     transition: "0.1s all ease-in",
     "&:hover": {
@@ -99,9 +92,7 @@ function ResponsiveDrawer(props) {
     <div>
       <div style={{ padding: "0.5rem" }}>
         <Link to="/">
-          <Typography className={classes.brand_name} variant="h5">
-            Playground 🚀
-          </Typography>
+          <Typography variant="h5">Playground 🚀</Typography>
         </Link>
       </div>
       <List>
