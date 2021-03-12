@@ -5,8 +5,7 @@ import Playground from "./button.playground.jsx";
 import PropDrawer from "../../components/PropDrawer";
 
 const Content = lazy(() => importMDX("./button.mdx"));
-class App extends Component {
-  render() {
+export default function Button() {
     return (
       <div>
         <Playground />
@@ -17,6 +16,4 @@ class App extends Component {
         </Suspense>
       </div>
     );
-  }
 }
-export default App;

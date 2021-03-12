@@ -4,9 +4,9 @@ import { importMDX } from "mdx.macro";
 import PropDrawer from "../../components/PropDrawer";
 
 const Content = lazy(() => importMDX("./avatar.mdx"));
-class App extends Component {
-  render() {
-    return (
+
+export default function Avatar(){
+  return (
       <div>
         <Playground />
         <Suspense fallback={<div>Loading...</div>}>
@@ -16,6 +16,4 @@ class App extends Component {
         </Suspense>
       </div>
     );
-  }
 }
-export default App;
