@@ -91,7 +91,7 @@ function ResponsiveDrawer(props) {
   const drawer = (
     <div>
       <div style={{ padding: "0.5rem" }}>
-        <Link to="/">
+        <Link to="/" onClick={() => handleDrawerToggle(false)}>
           <Typography variant="h5">Playground <span role="img" aria-label="playground" >🚀</span></Typography>
         </Link>
       </div>
