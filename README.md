@@ -53,7 +53,7 @@ npm start
 
 
 ## Releated Projects
-<br/>
+
  <a href="https://github.com/react-native-elements/react-native-elements">
    - React Native Elements
  </a>  <br/>
