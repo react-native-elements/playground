@@ -1,0 +1,68 @@
+# Props
+
+- [`count`](#count)
+- [`defaultRating`](#defaultRating)
+- [`onFinishRating`](#onFinishRating)
+- [`reviews`](#reviews)
+- [`showRating`](#showRating)
+
+---
+
+# Child Components
+
+### Accessory
+
+> Receives either all [Icon](icon.md#props) or [Image](image.md#props) props.
+
+---
+
+# Reference
+
+### `accessory`
+
+Icon or Image used as small overlay.
+If a `source` key is used in the object, then an Image will be used.
+
+|                                  Type                                  |                                    Default                                    |
+| :--------------------------------------------------------------------: | :---------------------------------------------------------------------------: |
+| {[...Icon props](icon.md#props)} or {[...Image props](image.md#props)} | { name: 'mode-edit', type: 'material', color: '#fff', underlayColor: '#000' } |
+
+---
+
+### `count`
+
+Total number of ratings to display
+
+|  Type  | Default |
+| :----: | :-----: |
+| number |   5     |
+
+---
+
+### `defaultRating`
+
+Initial value for the rating defaultRating
+
+|      Type      | Default |
+| :------------: | :-----: |
+|     number     |  1      |
+
+---
+
+### `reviews`
+
+Labels to show when each value is tapped e.g. If the first star is tapped, then value in index 0 will be used as the label
+
+|   Type   |                  Default                     |
+| :------: | :------------------------------------------: |
+| string[] | ['Terrible', 'Bad', 'Okay', 'Good', 'Great'] |
+
+---
+
+### `onFinishRating`
+
+Callback method when the user finishes rating. Gives you the final rating value as a whole number (required)
+
+|      Type      | Default |
+| :------------: | :-----: |
+|    function    |  none   |
