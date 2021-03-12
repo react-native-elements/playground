@@ -4,7 +4,7 @@ import {importMDX} from "mdx.macro";
 import PropDrawer from "../../components/PropDrawer";
 
 const Content = lazy(() => importMDX("./avatar.mdx"));
-const App=()=>{
+const Avatar=()=>{
     return (
       <div>
         <Playground />
@@ -17,4 +17,4 @@ const App=()=>{
     );
 }
 
-export default App;
+export default Avatar;
