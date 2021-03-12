@@ -1,0 +1,41 @@
+footer {
+  margin-top: 2rem;
+  width: 100%;
+  background: #212121;
+  color: #fafafa;
+  padding: 1rem;
+  bottom: 0;
+}
+
+.footer_product_info {
+  font-weight: 200;
+  font-style: italic;
+  color: #cac8c8;
+}
+
+.footer_product_img {
+  width: 150px;
+  padding: 1rem 0;
+  display: block;
+  transition: transform 0.2s;
+  margin-bottom: 5px;
+}
+
+.footer_product_img:hover {
+  transform: scale(1.09);
+}
+
+.footer_github_img {
+  margin-right: 10px;
+  transition: transform 0.2s;
+}
+.footer_github_img:hover {
+  transform: scale(1.09);
+}
+
+.netlify_img {
+  transition: transform 0.2s;
+}
+.netlify_img:hover {
+  transform: scale(1.3);
+}
