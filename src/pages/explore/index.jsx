@@ -10,14 +10,14 @@ function Expore() {
     <section>
       <Typography variant="h2">Explore</Typography>
 
-      <Grid container spacing={1} className={styles.grid__position} >
+      <Grid container spacing={1} className={styles.gridPosition} >
         {Components_Index.map((elm, idx) => {
           return (
             <Grid item xs={12} sm={6} md={4} lg={3}>
               <Link to={elm.path}>
-                <Paper className={styles.paper__position}>
+                <Paper className={styles.elementPosition}>
                   <Typography variant="h5">{elm.name}</Typography>
-                  <ArrowForward className={styles.arrowforward__position} />
+                  <ArrowForward className={styles.arrowPosition} />
                 </Paper>
               </Link>
             </Grid>

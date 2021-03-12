@@ -1,14 +1,14 @@
-.paper__position {
+.elementPosition {
     height: 60px;
     padding: 5px 10px;
     align-items: center;
     display: flex;
     position: relative;
 }
-.arrowforward__position {
+.arrowPosition{
     position: absolute;
     right: 10px;
 }
-.grid__position {
+.gridPosition {
     margin-top: 10;
 }
