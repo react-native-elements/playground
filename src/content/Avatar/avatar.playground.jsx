@@ -16,7 +16,7 @@ const AvatarPlay = () => {
         type: PropTypes.Object,
       },
       containerStyle: {
-        value: `{}`,
+        value: `{ backgroundColor: '#BDBDBD' }`,
         type: PropTypes.Object,
       },
       // icon
@@ -28,11 +28,6 @@ const AvatarPlay = () => {
         value: `{}`,
         type: PropTypes.Object,
       },
-      onAccessoryPress: {
-        value: `()=>alert('onAccessoryPress')`,
-        type: PropTypes.Function,
-      },
-
       onLongPress: {
         value: `()=>alert('onLongPress')`,
         type: PropTypes.Function,
@@ -55,12 +50,6 @@ const AvatarPlay = () => {
         type: PropTypes.Boolean,
         description: "Indicates that the button is disabled",
       },
-      showAccessory: {
-        value: true,
-        type: PropTypes.Boolean,
-        description: "Indicates that the button is disabled",
-      },
-
       size: {
         value: "large",
         options: {
