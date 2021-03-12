@@ -17,7 +17,7 @@ function Footer() {
       <Grid container spacing={5} justify="center">
         <Grid item xs={12} md={6} lg={4}>
           <Typography variant="h4" style={{ marginBottom: 10 }}>
-            Playground 🚀
+           Playground <span role="img" aria-label="playground">🚀</span>
           </Typography>
 
           <Divider />
@@ -25,16 +25,17 @@ function Footer() {
           <a
             href="https://github.com/react-native-elements/playground"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <Typography>GitHub Repositoy</Typography>
           </a>
 
-          <a href="https://reactnativeelements.com/" target="_blank">
+          <a href="https://reactnativeelements.com/" target="_blank" rel="noopener noreferrer">
             <Typography>Official Docs</Typography>
           </a>
           <br />
 
-          <a href="https://www.netlify.com">
+          <a href="https://www.netlify.com" target="_blank" rel="noopener noreferrer">
             <img
               src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg"
               alt="Deploys by Netlify"
@@ -46,6 +47,7 @@ function Footer() {
           <a
             href="https://github.com/react-native-elements/react-native-elements/"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <Typography variant="h6">React Native Elements</Typography>
             <Typography
@@ -58,6 +60,7 @@ function Footer() {
             <img
               src={require("../../assets/RNE_Logo.png")}
               className={styles.footer_product_img}
+              alt="react-native-elements-logo"
             />
 
             <img
