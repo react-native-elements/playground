@@ -30,7 +30,7 @@
 <br />
 <hr/>
 
-![React Native Elements UI Toolkit](https://raw.githubusercontent.com/tewarig/images/main/Screenshot%20from%202021-03-10%2019-44-18.png)
+![React Native Elements UI Toolkit](https://github.com/react-native-elements/playground/blob/master/public/thumbnail.png)
 
 
 ### Installation
