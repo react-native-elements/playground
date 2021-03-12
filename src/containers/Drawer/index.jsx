@@ -78,7 +78,7 @@ function ResponsiveDrawer(props) {
       <div style={{ padding: "0.5rem" }}>
         <Link to="/">
           <Typography style={{ fontWeight: 100 }} variant="h5">
-            Playground 🚀
+            Playground <span role="img" aria-label="Playground">🚀</span>
           </Typography>
         </Link>
       </div>
@@ -121,7 +121,7 @@ function ResponsiveDrawer(props) {
             </Typography>
           </Link>
           <div style={{ marginLeft: "auto" }}>
-            <a href="https://reactnativeelements.com/" target="_blank">
+            <a href="https://reactnativeelements.com/" target="_blank" rel="noopener noreferrer">
               <Button color="inherit">Docs</Button>
             </a>
             <IconButton
