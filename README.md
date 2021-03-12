@@ -53,13 +53,16 @@ npm start
 
 
 ## Releated Projects
+<br/>
  <a href="https://github.com/react-native-elements/react-native-elements">
    - React Native Elements
- </a> <a href="https://github.com/react-native-elements/react-native-elements-storybook">
+ </a>  <br/>
+ <a href="https://github.com/react-native-elements/react-native-elements-storybook">
    -  React Native Elements Storybook
-  </a><a href="https://github.com/react-native-elements/react-native-elements-app">
+  </a>  <br/>
+  <a href="https://github.com/react-native-elements/react-native-elements-app">
    -  React Native Elements App
-  </a>
+  </a>   <br/>
 
 ## Documentation
 
