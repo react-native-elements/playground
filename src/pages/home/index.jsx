@@ -83,7 +83,7 @@ function HomePage() {
 
 export default HomePage;
 
-const FeatureCard = ({banner,title,content}) => {
+const FeatureCard = (props) => {
   return (
     <Paper style={{ padding: "14px 7px", height: "100%" }}>
       <img
@@ -93,11 +93,11 @@ const FeatureCard = ({banner,title,content}) => {
           margin: "auto",
           display: "flex",
         }}
-        src={banner}
+        src={props.banner}
       />
       <div style={{ bottom: 0, marginTop: "1rem" }}>
-        <Typography variant="h5">{title}</Typography>
-        <Typography>{content}</Typography>
+        <Typography variant="h5">{props.title}</Typography>
+        <Typography>{props.content}</Typography>
       </div>
     </Paper>
   );
