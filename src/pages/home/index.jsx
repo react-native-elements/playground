@@ -2,7 +2,7 @@ import React from "react";
 import { Typography, Grid, Paper, Divider, Button } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import styles from "./home.module.css";
-import TypeWriter from "react-typewriter";
+
 
 import LBannerAnimation from "./animation.jsx";
 
@@ -15,7 +15,7 @@ function HomePage() {
             variant="h2"
             className={styles.header__home}
           >
-           <TypeWriter typing={0.5}>Exploring possibilities</TypeWriter> 
+          Exploring possibilities 
           </Typography>
           <Typography
             variant="h6"
@@ -48,7 +48,7 @@ function HomePage() {
       </Grid>
 
       <Divider className={styles.divider} />
-      <hr className={styles.line}/>
+      <hr noshade className={styles.line}/> 
       <Grid
         container
         spacing={5}

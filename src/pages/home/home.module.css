@@ -1,8 +1,9 @@
 .header__home{
-    font-size: calc(2rem + 6 * ((100vw - 320px) / 680));
+    font-size: calc(2rem + 6 * ((100vw - 320px) / 680)) !important;
+    
 }
 .headerbottom__home{
-    font-weight: 200;
+    font-weight: 200 !important;
      font-style: italic;
 }
 .explore_now{
@@ -27,7 +28,7 @@
 .paper:hover{
     transform: scale(1.05);
     transition: transform 0.6s;
-    
+
 }
 
 .inside_paper{
@@ -36,13 +37,16 @@
 }
 
 .line{
-    color: grey;
+    /* background-color: rgb(139, 108, 108); */
     margin-top: 20px;
     margin-bottom: 15px;
+    border: none;
+    border-top: 1px solid rgb(226, 226, 226);
 }
 .image{
     width: 70%;
-          min-height: 250;
-          margin: auto;
-          display: flex;
+    min-height: 250px;
+    margin: auto;
+    display: flex;
+    margin-bottom: 15px;
 }
