@@ -33,6 +33,10 @@ const OverlayPlayground = () => {
       onBackdropPress: {
         type: PropTypes.Function,
         value: `() => setIsVisible(!isVisible)`,
+        propHook: {
+          what: `false`,
+          into: `isVisible`,
+        }
       },
     },
     scope: {
