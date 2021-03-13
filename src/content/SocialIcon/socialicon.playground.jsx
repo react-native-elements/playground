@@ -7,6 +7,10 @@ const SocialIconlayground = () => {
   const params = useView({
     componentName: "SocialIcon",
     props: {
+      activityIndicatorStyle: {
+        type: PropTypes.Object,
+        value: `{marginLeft: 20, marginRight: 40}`
+      },
       button: { type: PropTypes.Boolean, value: false },
       Component: {
         type: PropTypes.ReactNode,
@@ -75,7 +79,6 @@ const SocialIconlayground = () => {
         value: "GitHub",
         description: "title if made into a button.",
       },
-
       type: {
         type: PropTypes.String,
         value: "github",
