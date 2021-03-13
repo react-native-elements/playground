@@ -1,6 +1,5 @@
 import * as React from "react";
-import { useState } from "react";
-import { View, Text, TouchableOpacity } from "react-native";
+import { Text, TouchableOpacity } from "react-native";
 import { Overlay } from "react-native-elements";
 import Modal from "modal-react-native-web";
 
