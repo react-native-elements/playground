@@ -13,14 +13,12 @@ function HomePage() {
             variant="h2"
             style={{
               fontSize: "calc(2rem + 6 * ((100vw - 320px) / 680))",
-            }}
-          >
+            }}>
             Exploring possibilities
           </Typography>
           <Typography
             variant="h6"
-            style={{ fontWeight: "200", fontStyle: "italic" }}
-          >
+            style={{ fontWeight: "200", fontStyle: "italic" }}>
             with React Native Elements
           </Typography>
         </Grid>
@@ -33,7 +31,12 @@ function HomePage() {
       <div style={{ width: "100%", textAlign: "center", marginBottom: "2rem" }}>
         <Link to="/explore">
           <Button variant="outlined" color="secondary">
-            <Typography variant="h6">Explore Now 🌇</Typography>
+            <Typography variant="h6">
+              Explore Now{" "}
+              <span role="img" aria-labelledby="sunset-over-building-emoji">
+                🌇
+              </span>
+            </Typography>
           </Button>
         </Link>
       </div>
@@ -52,8 +55,7 @@ function HomePage() {
         container
         spacing={5}
         justify="center"
-        style={{ justifyContent: "space-evenly" }}
-      >
+        style={{ justifyContent: "space-evenly" }}>
         <Grid item xs={12} md={7} lg={6}>
           <Typography variant="h5">Why?</Typography>
           <Typography>
@@ -87,6 +89,7 @@ const FeatureCard = (props) => {
   return (
     <Paper style={{ padding: "14px 7px", height: "100%" }}>
       <img
+        alt="art"
         style={{
           width: "70%",
           minHeight: 250,

@@ -17,7 +17,10 @@ function Footer() {
       <Grid container spacing={5} justify="center">
         <Grid item xs={12} md={6} lg={4}>
           <Typography variant="h4" style={{ marginBottom: 10 }}>
-            Playground 🚀
+            Playground{" "}
+            <span role="img" aria-labelledby="rocket-emoji">
+              🚀
+            </span>
           </Typography>
 
           <Divider />
@@ -25,11 +28,14 @@ function Footer() {
           <a
             href="https://github.com/react-native-elements/playground"
             target="_blank"
-          >
+            rel="noopener noreferrer">
             <Typography>GitHub Repositoy</Typography>
           </a>
 
-          <a href="https://reactnativeelements.com/" target="_blank">
+          <a
+            href="https://reactnativeelements.com/"
+            target="_blank"
+            rel="noopener noreferrer">
             <Typography>Official Docs</Typography>
           </a>
           <br />
@@ -46,16 +52,16 @@ function Footer() {
           <a
             href="https://github.com/react-native-elements/react-native-elements/"
             target="_blank"
-          >
+            rel="noopener noreferrer">
             <Typography variant="h6">React Native Elements</Typography>
             <Typography
               variant="subtitle1"
-              className={styles.footer_product_info}
-            >
+              className={styles.footer_product_info}>
               Cross-Platform React Native UI Toolkit
             </Typography>
 
             <img
+              alt="react-native-elements"
               src={require("../../assets/RNE_Logo.png")}
               className={styles.footer_product_img}
             />

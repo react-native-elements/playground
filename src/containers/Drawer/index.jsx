@@ -77,7 +77,7 @@ function ResponsiveDrawer(props) {
   const [selectedIndex, setSelectedIndex] = React.useState(-1);
 
   const handleDrawerToggle = (value) => {
-    if(value === false){
+    if (value === false) {
       setMobileOpen(false);
     } else {
       setMobileOpen(true);
@@ -92,7 +92,12 @@ function ResponsiveDrawer(props) {
     <div>
       <div style={{ padding: "0.5rem" }}>
         <Link to="/">
-          <Typography variant="h5">Playground 🚀</Typography>
+          <Typography variant="h5">
+            Playground{" "}
+            <span role="img" aria-labelledby="rocket-emoji">
+              🚀
+            </span>
+          </Typography>
         </Link>
       </div>
       <List>
@@ -100,15 +105,13 @@ function ResponsiveDrawer(props) {
           <Link
             key={elm.name}
             to={elm.path}
-            onClick={() => handleDrawerToggle(false)}
-          >
+            onClick={() => handleDrawerToggle(false)}>
             <ListItem
               button
               key={elm.name}
               selected={selectedIndex === index}
               onClick={(event) => handleListItemClick(event, index)}
-              className={classes.sideListItem}
-            >
+              className={classes.sideListItem}>
               <ListItemText primary={elm.name} />
             </ListItem>
           </Link>
@@ -130,8 +133,7 @@ function ResponsiveDrawer(props) {
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
-            className={classes.menuButton}
-          >
+            className={classes.menuButton}>
             <MenuIcon />
           </IconButton>
           <Link to="/">
@@ -140,15 +142,17 @@ function ResponsiveDrawer(props) {
             </Typography>
           </Link>
           <div style={{ marginLeft: "auto" }}>
-            <a href="https://reactnativeelements.com/" target="_blank">
+            <a
+              href="https://reactnativeelements.com/"
+              target="_blank"
+              rel="noopener noreferrer">
               <Button color="inherit">Docs</Button>
             </a>
             <IconButton
               color="inherit"
               rel="noopener noreferrer"
               href="https://github.com/react-native-elements/react-native-elements"
-              target="_blank"
-            >
+              target="_blank">
               <GitHub />
             </IconButton>
           </div>
@@ -168,8 +172,7 @@ function ResponsiveDrawer(props) {
             }}
             ModalProps={{
               keepMounted: true, // Better open performance on mobile.
-            }}
-          >
+            }}>
             {drawer}
           </Drawer>
         </Hidden>
@@ -179,8 +182,7 @@ function ResponsiveDrawer(props) {
               paper: classes.drawerPaper,
             }}
             variant="permanent"
-            open
-          >
+            open>
             {drawer}
           </Drawer>
         </Hidden>
