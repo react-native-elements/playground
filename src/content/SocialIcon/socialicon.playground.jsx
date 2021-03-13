@@ -9,7 +9,8 @@ const SocialIconlayground = () => {
     props: {
       activityIndicatorStyle: {
         type: PropTypes.Object,
-        value: `{marginLeft: 20, marginRight: 40}`
+        value: `{marginLeft: 20, marginRight: 40}`,
+        description: "Style to render when in loading state"
       },
       button: { type: PropTypes.Boolean, value: false },
       Component: {
