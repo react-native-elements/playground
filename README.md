@@ -32,25 +32,26 @@
 
 ![React Native Elements UI Toolkit](https://github.com/react-native-elements/playground/blob/master/public/thumbnail.png)
 
-
 ### Installation
 
-
 1. Clone the repo
+
 ```sh
 git clone  https://github.com/react-native-elements/playground.git
 cd playground
 ```
 
 2. Install NPM packages
+
 ```sh
 npm i
 ```
+
 3.  Run the development server
+
 ```sh
 npm start
 ```
-
 
 ## Releated Projects
 
@@ -66,18 +67,13 @@ npm start
 
 ## Documentation
 
-[View the full docs of React Native elements  here](https://reactnativeelements.com/docs/overview)
+[View the full docs of React Native elements here](https://reactnativeelements.com/docs/overview)
 
 ## Contributing
-
-
-
 
 Interested in contributing to this repo? Check out our
 [Contributing Guide](https://reactnativeelements.com/docs/contributing)
 and submit a PR for a new feature/bug fix.
-
-
 
 ### First Contributors
 
@@ -91,7 +87,6 @@ an
 [issue](https://github.com/react-native-elements/playground/issues/new)
 or a
 [pull request](https://github.com/react-native-elements/playground/pulls).
-
 
 ### Slack Community
 
@@ -158,5 +153,3 @@ Do you use React Native Elements in production? If so, consider supporting this 
 [![React Native Elements Backer](https://opencollective.com/react-native-elements/sponsor/17/avatar)](https://opencollective.com/react-native-elements/sponsor/17/website)
 [![React Native Elements Backer](https://opencollective.com/react-native-elements/sponsor/18/avatar)](https://opencollective.com/react-native-elements/sponsor/18/website)
 [![React Native Elements Backer](https://opencollective.com/react-native-elements/sponsor/19/avatar)](https://opencollective.com/react-native-elements/sponsor/19/website)
-
-
