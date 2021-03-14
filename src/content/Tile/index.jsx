@@ -3,7 +3,7 @@ import Playground from "./tile.playground.jsx";
 import { importMDX } from "mdx.macro";
 import PropDrawer from "../../components/PropDrawer";
 
-const Content = lazy(() => importMDX("./text.mdx"));
+const Content = lazy(() => importMDX("./tile.mdx"));
 
 export default function TilePlayground() {
   return (
