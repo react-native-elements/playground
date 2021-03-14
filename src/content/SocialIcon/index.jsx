@@ -10,8 +10,8 @@ export default function SocialIconPlayground() {
   return (
     <div>
       <Playground />
-      <Suspense>
-      <PropDrawer>
+      <Suspense fallback={<div>Loading...</div>}>
+        <PropDrawer>
           <Content />
         </PropDrawer>
       </Suspense>
