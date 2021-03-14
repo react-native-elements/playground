@@ -2,7 +2,7 @@ import React ,  { lazy, Suspense } from "react";
 import { importMDX } from "mdx.macro";
 
 
-import Playground from "./icon.playground.jsx";
+import Playground from "./input.playground.jsx";
 import PropDrawer from "../../components/PropDrawer";
 
 const Content = lazy(() => importMDX("./input.mdx"));
