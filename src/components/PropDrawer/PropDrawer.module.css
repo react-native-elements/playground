@@ -1,7 +1,7 @@
 .propdrawer{
-    position: fixed;
-    right: 0.5rem;
-    bottom: 1rem;
+    position: fixed !important;
+    right: 0.5rem !important;
+    bottom: 1rem !important;
 }
 .propdrawer__child{
     width: 70vw;
