@@ -22,7 +22,6 @@
     "react-native-web-linear-gradient": "^1.1.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
-    "react-typewriter": "^0.4.1",
     "react-view": "^2.3.2"
   },
   "scripts": {
