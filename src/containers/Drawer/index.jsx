@@ -72,11 +72,9 @@ const useStyles = makeStyles((theme) => ({
   zIndex: "1",
   backgroundColor: "white",
   top: "0",
-  padding: "10px 0",
-  width: "100%",
-
-  
-  
+  left:"0",
+  padding: "10px 10px",
+  width: "200px",
   },
   list:{
 marginTop: "20px"
