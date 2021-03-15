@@ -67,6 +67,20 @@ const useStyles = makeStyles((theme) => ({
       borderRight: "5px solid #2089dc",
     },
   },
+  playgroundTitle:{
+  position: "fixed",
+  zIndex: "1",
+  backgroundColor: "white",
+  top: "0",
+  padding: "10px 0",
+  width: "100%",
+
+  
+  
+  },
+  list:{
+marginTop: "20px"
+  },
 }));
 
 function ResponsiveDrawer(props) {
@@ -92,10 +106,10 @@ function ResponsiveDrawer(props) {
     <div>
       <div style={{ padding: "0.5rem" }}>
         <Link to="/">
-          <Typography variant="h5">Playground 🚀</Typography>
+          <Typography className={classes.playgroundTitle} variant="h5">Playground 🚀</Typography>
         </Link>
       </div>
-      <List>
+      <List className={classes.list}>
         {Components_Index.map((elm, index) => (
           <Link
             key={elm.name}
