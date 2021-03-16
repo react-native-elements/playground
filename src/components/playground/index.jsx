@@ -15,7 +15,7 @@ export default ({ params }) => {
       <div
         style={{
           border: "1px dashed #ccc",
-          position:'relative'
+          position: "relative",
         }}
       >
         <Compiler
