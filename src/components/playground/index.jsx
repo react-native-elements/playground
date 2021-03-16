@@ -24,8 +24,8 @@ export default ({ params }) => {
           placeholder={Placeholder}
         />
       </div>
-      <Error msg={params.errorProps.msg} isPopup />
       <Knobs {...params.knobProps} />
+      <Error msg={params.errorProps.msg}/>
       <Editor {...params.editorProps} />
       <Error {...params.errorProps} />
       <ActionButtons {...params.actions} />
