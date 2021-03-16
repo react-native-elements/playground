@@ -7,8 +7,6 @@ import Playground from "../../components/playground";
 import { useView, PropTypes } from "react-view";
 
 const InputPlayground = () => {
-  const [inputField, setInputField] = useState("Hello");
-
   const params = useView({
     componentName: "Input",
     props: {
