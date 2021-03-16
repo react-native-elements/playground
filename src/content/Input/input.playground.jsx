@@ -1,11 +1,8 @@
 import * as React from "react";
-import { useState } from "react";
-import { View } from "react-native";
 import { Input } from "react-native-elements";
 import Icon from "react-native-vector-icons/dist/MaterialCommunityIcons";
 import Playground from "../../components/playground";
 import { useView, PropTypes } from "react-view";
-
 const InputPlayground = () => {
   const params = useView({
     componentName: "Input",
@@ -22,7 +19,6 @@ const InputPlayground = () => {
         type: PropTypes.Object,
         value: `{background:"#ddd"}`,
       },
-
       inputContainerStyle: {
         type: PropTypes.Object,
         value: `{}`,
@@ -69,7 +65,7 @@ const InputPlayground = () => {
       },
       rightIcon: {
         type: PropTypes.ReactNode,
-        value: `<Icon name="close" size={20}/>`,
+        value: `<Icon name="close" size={20} onPress={() => this.clearButton.clear()}/>`,
       },
       rightIconContainerStyle: {
         type: PropTypes.Object,
@@ -87,6 +83,11 @@ const InputPlayground = () => {
       placeholder: {
         type: PropTypes.String,
         value: "Enter Name",
+      },
+      ref: {
+        type: PropTypes.Object,
+        value: "(input) =>  {this.clearButton = input}",
+        hidden: true,
       },
     },
     scope: {
