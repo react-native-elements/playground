@@ -91,7 +91,7 @@ to see them.
 
 If there is something you's like to see or request a new feature, please submit
 an
-[issue](https://github.com/react-native-elements/playground/issues/new)
+[issue](https://github.com/react-native-elements/playground/issues/new/choose)
 or a
 [pull request](https://github.com/react-native-elements/playground/pulls).
 
