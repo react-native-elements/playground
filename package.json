@@ -30,6 +30,7 @@
     "test": "react-app-rewired test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
+    "prepare": "node injectLatestProps.js",
     "deploy": "gh-pages -d build",
     "postinstall": "patch-package"
   },

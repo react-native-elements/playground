@@ -41,12 +41,15 @@
 git clone  https://github.com/react-native-elements/playground.git
 cd playground
 ```
-
 2. Install NPM packages
 ```sh
 npm i
 ```
-3.  Run the development server
+3. Prepare (File path is UNIX based, might not work with Windows. PR Appreciated)
+```sh
+npm run prepare
+```
+4.  Run the development server
 ```sh
 npm start
 ```
