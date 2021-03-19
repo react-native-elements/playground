@@ -186,7 +186,7 @@ export default function App() {
         })}
         <Route exact path="/explore">
           <Helmet>
-            <title>Explore | Playground 🚀 - React Native Elements</title>
+            <title>Explore | Playground <span role="img" aria-label="playground">🚀</span> - React Native Elements</title>
           </Helmet>
           <ExplorePage />
         </Route>

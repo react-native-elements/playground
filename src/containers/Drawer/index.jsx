@@ -91,8 +91,8 @@ function ResponsiveDrawer(props) {
   const drawer = (
     <div>
       <div style={{ padding: "0.5rem" }}>
-        <Link to="/">
-          <Typography variant="h5">Playground 🚀</Typography>
+        <Link to="/" onClick={() => handleDrawerToggle(false)}>
+          <Typography variant="h5">Playground <span role="img" aria-label="playground" >🚀</span></Typography>
         </Link>
       </div>
       <List>
@@ -140,7 +140,7 @@ function ResponsiveDrawer(props) {
             </Typography>
           </Link>
           <div style={{ marginLeft: "auto" }}>
-            <a href="https://reactnativeelements.com/" target="_blank">
+            <a href="https://reactnativeelements.com/" target="_blank" rel="noopener noreferrer">
               <Button color="inherit">Docs</Button>
             </a>
             <IconButton
