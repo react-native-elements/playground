@@ -11,9 +11,4 @@
   publish = "build/"
 
   # Default build command.
-  command = "npm run prepare && npm run build"
-
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+  command = "npm run build"
