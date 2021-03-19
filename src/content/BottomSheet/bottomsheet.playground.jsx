@@ -23,6 +23,10 @@ const BottomSheetPlayground = () => {
         value: `{ presentationStyle: "fullScreen" , visible:true}`,
         description: "Modal Props -> https://reactnative.dev/docs/modal",
       },
+      containerStyle: {
+        value: `{}`,
+        type: PropTypes.Object,
+      }
     },
     scope: {
       BottomSheet,

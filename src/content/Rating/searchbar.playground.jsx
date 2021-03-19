@@ -10,6 +10,10 @@ const RatingPlayground = () => {
   const params = useView({
     componentName: "Rating",
     props: {
+      fractions: {
+        type: PropTypes.Number,
+        value: 0,
+      },
       imageSize: {
         type: PropTypes.Number,
         value: 70,
@@ -29,6 +33,10 @@ const RatingPlayground = () => {
       ratingBackgroundColor: {
         type: PropTypes.String,
         value: "#FFF",
+      },
+      tintColor: {
+        type: PropTypes.String,
+        value: '',
       },
       ratingColor: {
         type: PropTypes.String,

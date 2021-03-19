@@ -48,11 +48,6 @@ const HeaderPlayground = () => {
         type: PropTypes.Boolean,
         value: false,
       },
-
-      iconLeft: {
-        type: PropTypes.Boolean,
-        value: false,
-      },
       iconType: {
         type: PropTypes.String,
         value: null,
