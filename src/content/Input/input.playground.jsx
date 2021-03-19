@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useRef } from "react";
 import { Input } from "react-native-elements";
 import Icon from "react-native-vector-icons/dist/MaterialCommunityIcons";
 import Playground from "../../components/playground";
@@ -7,6 +7,12 @@ const InputPlayground = () => {
   const params = useView({
     componentName: "Input",
     props: {
+      ref: {
+        type: PropTypes.Object,
+        value: "React.createRef()",
+        hidden: true,
+        stateful: true,
+      },
       containerStyle: {
         type: PropTypes.Object,
         value: `{}`,
@@ -65,7 +71,7 @@ const InputPlayground = () => {
       },
       rightIcon: {
         type: PropTypes.ReactNode,
-        value: `<Icon name="close" size={20} onPress={() => this.clearButton.clear()}/>`,
+        value: `<Icon name="close" size={20} onPress={() => ref.current.clear()}/>`,
       },
       rightIconContainerStyle: {
         type: PropTypes.Object,
@@ -83,11 +89,6 @@ const InputPlayground = () => {
       placeholder: {
         type: PropTypes.String,
         value: "Enter Name",
-      },
-      ref: {
-        type: PropTypes.Object,
-        value: "(input) =>  {this.clearButton = input}",
-        hidden: true,
       },
     },
     scope: {
