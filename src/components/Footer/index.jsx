@@ -1,13 +1,9 @@
-import React from "react";
-import { Link } from "react-router-dom";
 import {
-  Paper,
-  Grid,
-  ListItem,
-  Typography,
-  Button,
-  Divider,
+  Divider, Grid,
+
+  Typography
 } from "@material-ui/core";
+import React from "react";
 import pjson from "../../../package.json";
 import styles from "./Footer.module.css";
 
@@ -74,7 +70,7 @@ function Footer() {
           </a>
           <br />
 
-          <Typography variant="caption">
+          <Typography variant="caption" className={styles.footer_version}>
             Playground is using react-native-elements v{pjson.version}
           </Typography>
           <br />
