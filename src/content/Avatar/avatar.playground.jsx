@@ -19,7 +19,10 @@ const AvatarPlay = () => {
         value: `{ backgroundColor: '#BDBDBD' }`,
         type: PropTypes.Object,
       },
-      // icon
+      icon: {
+        value: `{}`,
+        type: PropTypes.Object,
+      },
       iconStyle: {
         value: `{}`,
         type: PropTypes.Object,
