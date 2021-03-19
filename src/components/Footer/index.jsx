@@ -9,19 +9,11 @@ import {
   Divider,
 } from "@material-ui/core";
 import pjson from "../../../package.json";
+import styles from "./Footer.module.css";
 
 function Footer() {
   return (
-    <footer
-      style={{
-        marginTop: "2rem",
-        width: "100%",
-        background: "#212121",
-        color: "#fafafa",
-        padding: "1rem",
-        bottom: 0,
-      }}
-    >
+    <footer>
       <Grid container spacing={5} justify="center">
         <Grid item xs={12} md={6} lg={4}>
           <Typography variant="h4" style={{ marginBottom: 10 }}>
@@ -41,23 +33,12 @@ function Footer() {
             <Typography>Official Docs</Typography>
           </a>
           <br />
-          <a
-            href="https://opencollective.com/react-native-elements/sponsor/4/website"
-            rel="nofollow"
-            target="_blank"
-          >
-            <img
-              src="https://camo.githubusercontent.com/b443d021e16d36526e1e49c8a9ec2a162245a625ee7699f557e28ddfbe79176f/68747470733a2f2f6f70656e636f6c6c6563746976652e636f6d2f72656163742d6e61746976652d656c656d656e74732f73706f6e736f722f342f617661746172"
-              alt="React Native Elements Backer"
-              data-canonical-src="https://opencollective.com/react-native-elements/sponsor/4/avatar"
-            />
-          </a>
-          <br />
 
           <a href="https://www.netlify.com">
             <img
               src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg"
               alt="Deploys by Netlify"
+              className={styles.netlify_img}
             />
           </a>
         </Grid>
@@ -69,24 +50,26 @@ function Footer() {
             <Typography variant="h6">React Native Elements</Typography>
             <Typography
               variant="subtitle1"
-              style={{ fontWeight: "200", fontStyle: "italic" }}
+              className={styles.footer_product_info}
             >
               Cross-Platform React Native UI Toolkit
             </Typography>
 
             <img
               src={require("../../assets/RNE_Logo.png")}
-              style={{ width: 150, padding: "1rem 0", display: "block" }}
+              className={styles.footer_product_img}
             />
 
             <img
               alt="GitHub stars"
               src="https://img.shields.io/github/stars/react-native-elements/react-native-elements?style=social"
+              className={styles.footer_github_img}
             />
             {"  "}
             <img
               alt="npm"
               src="https://img.shields.io/npm/dm/react-native-elements?style=social"
+              className={styles.footer_github_img}
             />
           </a>
           <br />
