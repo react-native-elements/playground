@@ -3,7 +3,7 @@ import clsx from "clsx";
 import { makeStyles } from "@material-ui/core/styles";
 
 import { Drawer, Fab } from "@material-ui/core";
-
+import styles from "./PropDrawer.module.css";
 export default function TemporaryDrawer(props) {
   const [state, setState] = React.useState({
     right: false,
@@ -23,13 +23,9 @@ export default function TemporaryDrawer(props) {
   return (
     <div>
       <React.Fragment>
-        <Fab
-          style={{
-            position: "fixed",
-            right: "0.5rem",
-            bottom: "1rem",
-          }}
-          variant="extended"
+        <Fab className={styles.propdrawer}
+          
+         variant="extended"
           size="small"
           color="secondary"
           onClick={toggleDrawer("right", true)}
@@ -41,13 +37,7 @@ export default function TemporaryDrawer(props) {
           open={state["right"]}
           onClose={toggleDrawer("right", false)}
         >
-          <div
-            style={{
-              width: "70vw",
-              maxWidth: 700,
-              paddingLeft: "1rem",
-            }}
-          >
+          <div className={styles.propdrawer__child}>
             {props.children}
           </div>
         </Drawer>
