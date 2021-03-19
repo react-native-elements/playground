@@ -11,4 +11,5 @@
   publish = "build/"
 
   # Default build command.
-  command = "npm run build"
+  command = "npm run prepare ;  npm run build"
+
