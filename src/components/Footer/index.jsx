@@ -9,23 +9,15 @@ import {
   Divider,
 } from "@material-ui/core";
 import pjson from "../../../package.json";
+import styles from "./Footer.module.css";
 
 function Footer() {
   return (
-    <footer
-      style={{
-        marginTop: "2rem",
-        width: "100%",
-        background: "#212121",
-        color: "#fafafa",
-        padding: "1rem",
-        bottom: 0,
-      }}
-    >
+    <footer>
       <Grid container spacing={5} justify="center">
         <Grid item xs={12} md={6} lg={4}>
           <Typography variant="h4" style={{ marginBottom: 10 }}>
-            Playground 🚀
+           Playground <span role="img" aria-label="playground">🚀</span>
           </Typography>
 
           <Divider />
@@ -33,19 +25,21 @@ function Footer() {
           <a
             href="https://github.com/react-native-elements/playground"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <Typography>GitHub Repositoy</Typography>
           </a>
 
-          <a href="https://reactnativeelements.com/" target="_blank">
+          <a href="https://reactnativeelements.com/" target="_blank" rel="noopener noreferrer">
             <Typography>Official Docs</Typography>
           </a>
           <br />
 
-          <a href="https://www.netlify.com">
+          <a href="https://www.netlify.com" target="_blank" rel="noopener noreferrer">
             <img
               src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg"
               alt="Deploys by Netlify"
+              className={styles.netlify_img}
             />
           </a>
         </Grid>
@@ -53,28 +47,32 @@ function Footer() {
           <a
             href="https://github.com/react-native-elements/react-native-elements/"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <Typography variant="h6">React Native Elements</Typography>
             <Typography
               variant="subtitle1"
-              style={{ fontWeight: "200", fontStyle: "italic" }}
+              className={styles.footer_product_info}
             >
               Cross-Platform React Native UI Toolkit
             </Typography>
 
             <img
               src={require("../../assets/RNE_Logo.png")}
-              style={{ width: 150, padding: "1rem 0", display: "block" }}
+              className={styles.footer_product_img}
+              alt="react-native-elements-logo"
             />
 
             <img
               alt="GitHub stars"
               src="https://img.shields.io/github/stars/react-native-elements/react-native-elements?style=social"
+              className={styles.footer_github_img}
             />
             {"  "}
             <img
               alt="npm"
               src="https://img.shields.io/npm/dm/react-native-elements?style=social"
+              className={styles.footer_github_img}
             />
           </a>
           <br />
