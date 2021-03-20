@@ -41,12 +41,15 @@
 git clone  https://github.com/react-native-elements/playground.git
 cd playground
 ```
-
 2. Install NPM packages
 ```sh
 npm i
 ```
-3.  Run the development server
+3. Prepare (File path is UNIX based, might not work with Windows. PR Appreciated)
+```sh
+npm run prepare
+```
+4.  Run the development server
 ```sh
 npm start
 ```
@@ -88,7 +91,7 @@ to see them.
 
 If there is something you's like to see or request a new feature, please submit
 an
-[issue](https://github.com/react-native-elements/playground/issues/new)
+[issue](https://github.com/react-native-elements/playground/issues/new/choose)
 or a
 [pull request](https://github.com/react-native-elements/playground/pulls).
 
