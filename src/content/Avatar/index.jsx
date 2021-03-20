@@ -4,7 +4,7 @@ import { importMDX } from "mdx.macro";
 import PropDrawer from "../../components/PropDrawer";
 import Playground from "./avatar.playground.jsx";
 
-const Content = lazy(() => importMDX("../Props/avatar.md"));
+const Content = lazy(() => importMDX("../Props/avatar.mdx"));
 
 export default function Avatar() {
   return (

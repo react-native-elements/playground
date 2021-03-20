@@ -5,7 +5,7 @@ import PropDrawer from "../../components/PropDrawer";
 
 import Playground from "./divider.playground.jsx";
 
-const Content = lazy(() => importMDX("../Props/divider.md"));
+const Content = lazy(() => importMDX("../Props/divider.mdx"));
 
 export default function DividerPlayground() {
   return (

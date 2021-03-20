@@ -4,7 +4,7 @@ import { importMDX } from "mdx.macro";
 import PropDrawer from "../../components/PropDrawer";
 import Playground from "./button.playground.jsx";
 
-const Content = lazy(() => importMDX("../Props/button.md"));
+const Content = lazy(() => importMDX("../Props/button.mdx"));
 class App extends Component {
   render() {
     return (
