@@ -1,0 +1,10 @@
+.propdrawer__explorer{
+    position: fixed !important;
+    right: 0.5rem !important;
+    bottom: 1rem !important;
+}
+.propdrawer__drawer{
+    width: 70vw;
+    max-width: 700;
+    padding-left: 1rem;
+}
