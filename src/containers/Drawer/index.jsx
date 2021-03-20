@@ -91,8 +91,19 @@ function ResponsiveDrawer(props) {
   const drawer = (
     <div>
       <div style={{ padding: "0.5rem" }}>
-        <Link to="/" onClick={(event) => handleListItemClick(event, -1)}>
-          <Typography variant="h5">Playground 🚀</Typography>
+        <Link
+          to="/"
+          onClick={() => {
+            setSelectedIndex(-1);
+            handleDrawerToggle(false);
+          }}
+        >
+          <Typography variant="h5">
+            Playground{" "}
+            <span role="img" aria-label="playground">
+              🚀
+            </span>
+          </Typography>
         </Link>
       </div>
       <List>
