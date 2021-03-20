@@ -4,7 +4,7 @@ import { importMDX } from "mdx.macro";
 import PropDrawer from "../../components/PropDrawer";
 import Playground from "./tooltip.playground.jsx";
 
-const Content = lazy(() => importMDX("../Props/text.md"));
+const Content = lazy(() => importMDX("../Props/text.mdx"));
 
 export default function TextPlayground() {
   return (

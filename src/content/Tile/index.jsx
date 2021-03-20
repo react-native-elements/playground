@@ -5,7 +5,7 @@ import PropDrawer from "../../components/PropDrawer";
 
 import Playground from "./tile.playground.jsx";
 
-const Content = lazy(() => importMDX("../Props/tile.md"));
+const Content = lazy(() => importMDX("../Props/tile.mdx"));
 
 export default function TilePlayground() {
   return (

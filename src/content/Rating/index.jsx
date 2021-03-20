@@ -5,7 +5,7 @@ import PropDrawer from "../../components/PropDrawer";
 
 import Playground from "./searchbar.playground.jsx";
 
-const Content = lazy(() => importMDX("../Props/searchbar.md"));
+const Content = lazy(() => importMDX("../Props/rating.mdx"));
 
 export default function RatingPlayground() {
   return (
