@@ -10,7 +10,7 @@
     "@react-native-community/toolbar-android": "^0.1.0-rc.2",
     "history": "^5.0.0",
     "mdx.macro": "^0.2.9",
-    "modal-react-native-web": "^0.2.0",
+    "modal-react-native-web": "^0.1.2",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-helmet": "^6.1.0",
@@ -18,11 +18,11 @@
     "react-native-elements": "latest",
     "react-native-safe-area-context": "^3.2.0",
     "react-native-vector-icons": "^6.7.0",
-    "react-native-web": "^0.12.0",
+    "react-native-web": "^0.15.0",
     "react-native-web-linear-gradient": "^1.1.1",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.1",
-    "react-view": "^2.3.2"
+    "react-scripts": "^4.0.3",
+    "react-view": "^1.0.0"
   },
   "scripts": {
     "start": "react-app-rewired start",
