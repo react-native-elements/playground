@@ -13,7 +13,7 @@ import {
 export default ({ params }) => {
   return (
     <React.Fragment>
-      <div className={styles.playground}>
+      <div className={styles.playground__container}>
         <Compiler
           {...params.compilerProps}
           minHeight={62}

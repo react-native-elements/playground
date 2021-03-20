@@ -23,7 +23,7 @@ export default function TemporaryDrawer(props) {
   return (
     <div>
       <React.Fragment>
-        <Fab className={styles.propdrawer}
+        <Fab className={styles.propdrawer__explorer}
           
          variant="extended"
           size="small"
@@ -37,7 +37,7 @@ export default function TemporaryDrawer(props) {
           open={state["right"]}
           onClose={toggleDrawer("right", false)}
         >
-          <div className={styles.propdrawer__child}>
+          <div className={styles.propdrawer__drawer}>
             {props.children}
           </div>
         </Drawer>
