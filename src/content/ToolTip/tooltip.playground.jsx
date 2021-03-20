@@ -36,7 +36,7 @@ const ToolTipPlayground = () => {
         type: PropTypes.Number,
       },
       highlightColor: {
-        value: 'transparent',
+        value: "transparent",
         type: PropTypes.String,
       },
       ModalComponent: {

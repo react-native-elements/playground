@@ -33,7 +33,12 @@ function HomePage() {
       <div style={{ width: "100%", textAlign: "center", marginBottom: "2rem" }}>
         <Link to="/explore">
           <Button variant="outlined" color="secondary">
-            <Typography variant="h6">Explore Now <span role="img" aria-label="explore">🌇</span></Typography>
+            <Typography variant="h6">
+              Explore Now{" "}
+              <span role="img" aria-label="explore">
+                🌇
+              </span>
+            </Typography>
           </Button>
         </Link>
       </div>

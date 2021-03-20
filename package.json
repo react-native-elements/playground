@@ -32,7 +32,8 @@
     "predeploy": "npm run build",
     "prepare": "node injectLatestProps.js",
     "deploy": "gh-pages -d build",
-    "postinstall": "patch-package"
+    "postinstall": "patch-package",
+    "format": "prettier --write \"./src\""
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -53,8 +54,22 @@
     "@babel/plugin-proposal-class-properties": "^7.10.4",
     "customize-cra": "^1.0.0",
     "gh-pages": "^3.1.0",
+    "husky": "^4.3.8",
+    "lint-staged": "^10.5.4",
     "patch-package": "^6.2.2",
     "postinstall-postinstall": "^2.1.0",
+    "prettier": "^2.2.1",
     "react-app-rewired": "^2.1.6"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,css,md,json}": [
+      "prettier --write --ignore-unknown",
+      "git add"
+    ]
   }
 }
