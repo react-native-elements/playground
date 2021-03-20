@@ -1,49 +1,48 @@
-.header__home{
+.home__header{
     font-size: calc(2rem + 6 * ((100vw - 320px) / 680)) !important;
     
 }
-.headerbottom__home{
+.home__headerbottom{
     font-weight: 200 !important;
      font-style: italic;
 }
-.explore_now{
+.home__explorenow{
     width: 100%;
      text-align: center;
       margin-bottom: 2rem;
 }
-.divider{
+.home__divider{
     margin: 3vh 0;
 }
-.grid{
+.home__grid{
     justify-content: space-evenly;
     
 }
 
     
-.paper{
+.home__paper{
     padding: 14px 7px;
      height: 100%;
      
 }
-.paper:hover{
+.home__paper:hover{
     transform: scale(1.05);
     transition: transform 0.6s;
 
 }
 
-.inside_paper{
+.home__inside_paper{
     bottom: 0;
      margin-top: 1rem;
 }
 
-.line{
-    /* background-color: rgb(139, 108, 108); */
+.home__line{
     margin-top: 20px;
     margin-bottom: 15px;
     border: none;
     border-top: 1px solid rgb(226, 226, 226);
 }
-.image{
+.home__image{
     width: 70%;
     min-height: 250px;
     margin: auto;

@@ -13,13 +13,13 @@ function HomePage() {
         <Grid item md={6} sm={12}>
           <Typography
             variant="h2"
-            className={styles.header__home}
+            className={styles.home__header}
           >
           Exploring possibilities 
           </Typography>
           <Typography
             variant="h6"
-            className={styles.headerbottom__home}
+            className={styles.home__headerbottom}
           >
             with React Native Elements
           </Typography>
@@ -30,7 +30,7 @@ function HomePage() {
           </div>
         </Grid>
       </Grid>
-      <div className={styles.explore_now}>
+      <div className={styles.home__explorenow}>
         <Link to="/explore">
           <Button variant="outlined" color="secondary">
             <Typography variant="h6">Explore Now 🌇</Typography>
@@ -47,13 +47,13 @@ function HomePage() {
         })}
       </Grid>
 
-      <Divider className={styles.divider} />
-      <hr noshade className={styles.line}/> 
+      <Divider className={styles.home__divider} />
+      <hr noshade className={styles.home__line}/> 
       <Grid
         container
         spacing={5}
         justify="center"
-        className={styles.grid}
+        className={styles.home__grid}
       >
     
         <Grid item xs={12} md={7} lg={6}>
@@ -88,8 +88,8 @@ export default HomePage;
 
 const FeatureCard = (props) => {
   return (
-    <Paper className={styles.paper}>
-      <img className={styles.image}
+    <Paper className={styles.home__paper}>
+      <img className={styles.home__image}
         src={props.banner}
       />
       <div className="inside_paper">
