@@ -1,26 +1,25 @@
-import React from "react";
-import PropTypes from "prop-types";
+import { Button, Container } from "@material-ui/core";
 import AppBar from "@material-ui/core/AppBar";
 import CssBaseline from "@material-ui/core/CssBaseline";
-
 import Drawer from "@material-ui/core/Drawer";
 import Hidden from "@material-ui/core/Hidden";
 import IconButton from "@material-ui/core/IconButton";
-
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
-import { GitHub } from "@material-ui/icons";
 import ListItemText from "@material-ui/core/ListItemText";
-
-import MenuIcon from "@material-ui/icons/Menu";
+import { makeStyles, useTheme } from "@material-ui/core/styles";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
-import { Button, Container } from "@material-ui/core";
-import { makeStyles, useTheme } from "@material-ui/core/styles";
-
-import Navigation from "../Navigation";
+import { GitHub } from "@material-ui/icons";
+import MenuIcon from "@material-ui/icons/Menu";
+import PropTypes from "prop-types";
+import React from "react";
 import { Link } from "react-router-dom";
-import { Components_Index } from "../Navigation";
+import Navigation, { Components_Index } from "../Navigation";
+
+
+
+
 
 const drawerWidth = 200;
 
@@ -92,7 +91,7 @@ function ResponsiveDrawer(props) {
     <div>
       <div style={{ padding: "0.5rem" }}>
         <Link to="/">
-          <Typography variant="h5">Playground 🚀</Typography>
+          <Typography variant="h5">Playground</Typography>
         </Link>
       </div>
       <List>

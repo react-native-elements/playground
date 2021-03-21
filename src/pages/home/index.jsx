@@ -1,8 +1,8 @@
+import { Button, Divider, Grid, Paper, Typography } from "@material-ui/core";
 import React from "react";
-import { Typography, Grid, Paper, Divider, Button } from "@material-ui/core";
 import { Link } from "react-router-dom";
-
 import LBannerAnimation from "./animation.jsx";
+
 
 function HomePage() {
   return (
@@ -32,7 +32,7 @@ function HomePage() {
       </Grid>
       <div style={{ width: "100%", textAlign: "center", marginBottom: "2rem" }}>
         <Link to="/explore">
-          <Button variant="outlined" color="secondary">
+          <Button variant="outlined" color="primary">
             <Typography variant="h6">Explore Now 🌇</Typography>
           </Button>
         </Link>
@@ -107,7 +107,7 @@ const FEATURES_LIST = [
   {
     banner: require("../../assets/SVG/design.svg"),
     title: "Design",
-    content: "From Design -> Code.",
+    content: "From Design to Code.",
   },
   {
     banner: require("../../assets/SVG/tweak.svg"),
@@ -122,6 +122,6 @@ const FEATURES_LIST = [
   {
     banner: require("../../assets/SVG/bootstrap.svg"),
     title: "Bootstrap",
-    content: "Shhh... Generate code, bootstrap applications and relax.",
+    content: "Generate code, bootstrap applications and relax.",
   },
 ];
