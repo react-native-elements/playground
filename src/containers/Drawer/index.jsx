@@ -77,7 +77,7 @@ function ResponsiveDrawer(props) {
   const [selectedIndex, setSelectedIndex] = React.useState(-1);
 
   const handleDrawerToggle = (value) => {
-    if(value === false){
+    if (value === false) {
       setMobileOpen(false);
     } else {
       setMobileOpen(true);
@@ -91,8 +91,19 @@ function ResponsiveDrawer(props) {
   const drawer = (
     <div>
       <div style={{ padding: "0.5rem" }}>
-        <Link to="/" onClick={() => handleDrawerToggle(false)}>
-          <Typography variant="h5">Playground <span role="img" aria-label="playground" >🚀</span></Typography>
+        <Link
+          to="/"
+          onClick={() => {
+            setSelectedIndex(-1);
+            handleDrawerToggle(false);
+          }}
+        >
+          <Typography variant="h5">
+            Playground{" "}
+            <span role="img" aria-label="playground">
+              🚀
+            </span>
+          </Typography>
         </Link>
       </div>
       <List>
@@ -134,13 +145,17 @@ function ResponsiveDrawer(props) {
           >
             <MenuIcon />
           </IconButton>
-          <Link to="/">
+          <Link to="/" onClick={() => setSelectedIndex(-1)}>
             <Typography variant="h6" noWrap>
               React Native Elements
             </Typography>
           </Link>
           <div style={{ marginLeft: "auto" }}>
-            <a href="https://reactnativeelements.com/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://reactnativeelements.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Button color="inherit">Docs</Button>
             </a>
             <IconButton

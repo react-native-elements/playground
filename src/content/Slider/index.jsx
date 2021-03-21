@@ -4,7 +4,7 @@ import { importMDX } from "mdx.macro";
 import PropDrawer from "../../components/PropDrawer";
 import Playground from "./slider.playground.jsx";
 
-const Content = lazy(() => importMDX("../Props/slider.md"));
+const Content = lazy(() => importMDX("../Props/slider.mdx"));
 
 export default function SliderPlayground() {
   return (

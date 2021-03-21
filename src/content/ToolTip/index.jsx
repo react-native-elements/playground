@@ -3,7 +3,7 @@ import { importMDX } from "mdx.macro";
 
 import PropDrawer from "../../components/PropDrawer";
 import Playground from "./tooltip.playground.jsx";
-const Content = lazy(() => importMDX("../Props/tooltip.md"));
+const Content = lazy(() => importMDX("../Props/tooltip.mdx"));
 
 export default function ToolTipPlayground() {
   return (

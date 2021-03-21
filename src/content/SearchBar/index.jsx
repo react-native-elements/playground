@@ -4,7 +4,7 @@ import { importMDX } from "mdx.macro";
 import PropDrawer from "../../components/PropDrawer";
 import Playground from "./searchbar.playground.jsx";
 
-const Content = lazy(() => importMDX("../Props/searchbar.md"));
+const Content = lazy(() => importMDX("../Props/searchbar.mdx"));
 
 export default function SearchBarPlayground() {
   return (

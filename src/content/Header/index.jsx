@@ -5,7 +5,7 @@ import PropDrawer from "../../components/PropDrawer";
 
 import Playground from "./header.playground.jsx";
 
-const Content = lazy(() => importMDX("../Props/header.md"));
+const Content = lazy(() => importMDX("../Props/header.mdx"));
 
 export default function HeaderPlayground() {
   return (

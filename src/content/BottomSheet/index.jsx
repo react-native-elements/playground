@@ -5,7 +5,7 @@ import PropDrawer from "../../components/PropDrawer";
 
 import Playground from "./bottomsheet.playground.jsx";
 
-const Content = lazy(() => importMDX("../Props/rating.md"));
+const Content = lazy(() => importMDX("../Props/bottomsheet.mdx"));
 export default function BottomSheetPlayground() {
   return (
     <div>

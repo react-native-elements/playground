@@ -3,7 +3,7 @@ import { importMDX } from "mdx.macro";
 import PropDrawer from "../../components/PropDrawer";
 
 import Playground from "./checkbox.playground.jsx";
-const Content = lazy(() => importMDX("../Props/checkbox.md"));
+const Content = lazy(() => importMDX("../Props/checkbox.mdx"));
 
 export default function CheckBoxPlayground() {
   return (
