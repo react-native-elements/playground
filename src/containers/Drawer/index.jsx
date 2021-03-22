@@ -126,7 +126,7 @@ function ResponsiveDrawer(props) {
       <AppBar position="fixed" className={classes.appBar}>
         <Toolbar>
           <IconButton
-            color="inherit"
+            color="primary"
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
@@ -135,7 +135,9 @@ function ResponsiveDrawer(props) {
             <MenuIcon />
           </IconButton>
           <Link to="/">
-            <Typography variant="h6" noWrap>
+            <Typography variant="h4" noWrap
+             style={{ fontStyle: "bold",'font-family': "Aerial"}}
+             >
               React Native Elements
             </Typography>
           </Link>

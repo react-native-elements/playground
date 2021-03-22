@@ -10,16 +10,19 @@ function HomePage() {
       <Grid container spacing={5} justify="center" alignItems="center">
         <Grid item md={6} sm={12}>
           <Typography
-            variant="h2"
+            variant="h1"
             style={{
-              fontSize: "calc(2rem + 6 * ((100vw - 320px) / 680))",
+              fontSize: "calc(4rem + 6 * ((100vw - 320px) / 680))",
+              fontStyle : "Bold",
+              'font-family': "Palatino"
             }}
           >
-            Exploring possibilities
+            Exploring 
+            Possibilities 
           </Typography>
           <Typography
-            variant="h6"
-            style={{ fontWeight: "200", fontStyle: "italic" }}
+            variant="h4"
+            style={{ fontWeight: "25", fontStyle: "bold",'font-family': "Palatino"}}
           >
             with React Native Elements
           </Typography>
@@ -32,8 +35,8 @@ function HomePage() {
       </Grid>
       <div style={{ width: "100%", textAlign: "center", marginBottom: "2rem" }}>
         <Link to="/explore">
-          <Button variant="outlined" color="secondary">
-            <Typography variant="h6">Explore Now <span role="img" aria-label="explore">🌇</span></Typography>
+          <Button variant="outlined" color="Primary">
+            <Typography variant="h6"> Explore Now</Typography>
           </Button>
         </Link>
       </div>
