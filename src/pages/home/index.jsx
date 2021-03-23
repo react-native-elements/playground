@@ -89,7 +89,7 @@ const FeatureCard = (props) => {
   return (
     <Paper className={styles.home__paper}>
       <img className={styles.home__image}
-        src={props.banner}
+        src={props.banner} alt="playground-banner"
       />
       <div className={styles.home__insidepaper}>
         <Typography variant="h5">{props.title}</Typography>
