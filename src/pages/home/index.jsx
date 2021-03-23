@@ -40,7 +40,7 @@ function HomePage() {
           </Button>
         </Link>
       </div>
-      <Grid container spacing={1} justify="center">
+      <Grid clasname={'image'} container spacing={1} justify="center">
         {FEATURES_LIST.map((feature, idx) => {
           return (
             <Grid item xs={6} md={4} lg={3} key={idx}>
@@ -58,21 +58,40 @@ function HomePage() {
         style={{ justifyContent: "space-evenly" }}
       >
         <Grid item xs={12} md={7} lg={6}>
-          <Typography variant="h5">Why?</Typography>
-          <Typography>
+          <Typography variant="h5"
+           style={{
+            textAlign : "centre",
+            fontFamily: "Palatino"
+          }}>
+            Why?
+            </Typography>
+          <Typography
+          style={{
+            textAlign : "centre",
+            fontFamily: "Palatino"
+          }}>
             React Native Elements houses a lot of components, and these
             components come with a lot of customisation and tweaks via props.
             Sometimes the user gets confused and wastes a lot of time in
             achieving the desired result.
             <br />
             We came across a lot of such questions every day and sometimes user
-            reports bugs which aren't bugs but just improper
+            reports bugs which aren't bugs but just improper 
             implementation/usage of the components.
+           
           </Typography>
         </Grid>
         <Grid item xs={12} md={5} lg={5}>
-          <Typography variant="h5">How it solves the problem?</Typography>
-          <Typography>
+          <Typography variant="h5"
+           style={{
+            textAlign : "centre",
+            fontFamily: "Palatino"
+          }}>How it solves the problem?</Typography>
+          <Typography  
+          style={{
+            textAlign : "centre",
+            fontFamily: "Palatino"
+          }}>
             With Playground, users can explore components and tweak them as per
             their use-case and generate production-ready code. Or they can
             explore new possibilities with the components and improve the
