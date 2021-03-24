@@ -1,10 +1,10 @@
 import React, { lazy, Component, Suspense } from "react";
 import { importMDX } from "mdx.macro";
 
-import Playground from "./button.playground.jsx";
 import PropDrawer from "../../components/PropDrawer";
+import Playground from "./button.playground.jsx";
 
-const Content = lazy(() => importMDX("./button.mdx"));
+const Content = lazy(() => importMDX("../Props/button.md"));
 class App extends Component {
   render() {
     return (
