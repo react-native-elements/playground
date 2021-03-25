@@ -91,7 +91,8 @@ function ResponsiveDrawer(props) {
     <div>
       <div style={{ padding: "0.5rem" }}>
         <Link to="/" onClick={() => handleDrawerToggle(false)}>
-          <Typography variant="h5" style={{ fontStyle: "bold",'font-family': "aerial"}}>Playground</Typography>
+          {/* <Typography variant="h5" style={{ fontStyle: "bold",'font-family': "aerial"}}>Playground</Typography> */}
+          <Typography variant="h5">Playground <span role="img" aria-label="playground" >🚀</span></Typography>
         </Link>
       </div>
       <List>
@@ -141,7 +142,6 @@ function ResponsiveDrawer(props) {
               fontSize: "calc(1rem + 6 * ((100vw - 320px) / 680))",
               fontStyle : "Bold",
               marginLeft:"auto",
-              'font-family': "Palatino"
             }}
              >
               React Native Elements

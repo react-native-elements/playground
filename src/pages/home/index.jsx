@@ -13,8 +13,7 @@ function HomePage() {
             variant="h1"
             style={{
               fontSize: "calc(4rem + 6 * ((100vw - 320px) / 680))",
-              fontStyle : "Bold",
-              'font-family': "Palatino"
+              fontStyle : "bold"
             }}
           >
             Exploring 
@@ -22,7 +21,7 @@ function HomePage() {
           </Typography>
           <Typography
             variant="h4"
-            style={{ fontWeight: "25", fontStyle: "bold",'font-family': "Palatino"}}
+            style={{ fontWeight: "25", fontStyle: "italic"}}
           >
             with React Native Elements
           </Typography>
@@ -61,14 +60,14 @@ function HomePage() {
           <Typography variant="h5"
            style={{
             textAlign : "centre",
-            fontFamily: "Palatino"
+            
           }}>
             Why?
             </Typography>
           <Typography
           style={{
             textAlign : "centre",
-            fontFamily: "Palatino"
+           
           }}>
             React Native Elements houses a lot of components, and these
             components come with a lot of customisation and tweaks via props.
@@ -85,12 +84,10 @@ function HomePage() {
           <Typography variant="h5"
            style={{
             textAlign : "centre",
-            fontFamily: "Palatino"
           }}>How it solves the problem?</Typography>
           <Typography  
           style={{
             textAlign : "centre",
-            fontFamily: "Palatino"
           }}>
             With Playground, users can explore components and tweak them as per
             their use-case and generate production-ready code. Or they can
