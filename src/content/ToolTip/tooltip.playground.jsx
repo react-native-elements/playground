@@ -68,14 +68,17 @@ const ToolTipPlayground = () => {
         type: PropTypes.String,
       },
       toggleOnPress: {
+        defaultValue: true,
         value: true,
         type: PropTypes.Boolean,
       },
       withOverlay: {
+        defaultValue: true,
         value: true,
         type: PropTypes.Boolean,
       },
       withPointer: {
+        defaultValue: true,
         value: true,
         type: PropTypes.Boolean,
       },
