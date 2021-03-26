@@ -9,12 +9,12 @@ const Content = lazy(() => importMDX("../Props/text.md"));
 export default function TextPlayground() {
   return (
     <div>
-    <Playground />
-    <Suspense fallback={<div>Loading...</div>}>
-      <PropDrawer>
-        <Content />
-      </PropDrawer>
-    </Suspense>
-  </div>
+      <Playground />
+      <Suspense fallback={<div>Loading...</div>}>
+        <PropDrawer>
+          <Content />
+        </PropDrawer>
+      </Suspense>
+    </div>
   );
 }

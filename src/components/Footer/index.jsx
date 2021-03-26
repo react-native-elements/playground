@@ -17,7 +17,10 @@ function Footer() {
       <Grid container spacing={5} justify="center">
         <Grid item xs={12} md={6} lg={4}>
           <Typography variant="h4" style={{ marginBottom: 10 }}>
-           Playground <span role="img" aria-label="playground">🚀</span>
+            Playground{" "}
+            <span role="img" aria-label="playground">
+              🚀
+            </span>
           </Typography>
 
           <Divider />
@@ -30,12 +33,20 @@ function Footer() {
             <Typography>GitHub Repositoy</Typography>
           </a>
 
-          <a href="https://reactnativeelements.com/" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://reactnativeelements.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Typography>Official Docs</Typography>
           </a>
           <br />
 
-          <a href="https://www.netlify.com" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.netlify.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img
               src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg"
               alt="Deploys by Netlify"

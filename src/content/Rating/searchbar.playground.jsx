@@ -36,7 +36,7 @@ const RatingPlayground = () => {
       },
       tintColor: {
         type: PropTypes.String,
-        value: '',
+        value: "",
       },
       ratingColor: {
         type: PropTypes.String,
