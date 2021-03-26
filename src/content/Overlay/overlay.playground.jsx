@@ -1,6 +1,5 @@
 import * as React from "react";
-import { useState } from "react";
-import { View, Text, TouchableOpacity } from "react-native";
+import { Text, TouchableOpacity } from "react-native";
 import { Overlay } from "react-native-elements";
 import Modal from "modal-react-native-web";
 
@@ -18,6 +17,16 @@ const OverlayPlayground = () => {
       children: {
         type: PropTypes.ReactNode,
         value: `<Text>Some content</Text><TouchableOpacity onPress={()=>setIsVisible(!isVisible)}><Text>Click to close</Text></TouchableOpacity>`,
+        propHook: ({getInstrumentOnChange, fnBodyAppend}) => ({
+          JSXAttribute(path) {
+            if (path.get('name').node.name === 'onPress') {
+              fnBodyAppend(
+                path.get('value'),
+                getInstrumentOnChange('false', 'isVisible')
+              );
+            }
+          },
+        }),
       },
       isVisible: {
         type: PropTypes.Boolean,
@@ -37,6 +46,10 @@ const OverlayPlayground = () => {
       onBackdropPress: {
         type: PropTypes.Function,
         value: `() => setIsVisible(!isVisible)`,
+        propHook: {
+          what: `false`,
+          into: `isVisible`,
+        }
       },
       overlayStyle: {
         type: PropTypes.Object,

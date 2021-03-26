@@ -1,8 +1,6 @@
 import * as React from "react";
-import { useState } from "react";
-import { View, TouchableOpacity, TouchableHighlight } from "react-native";
+import { TouchableHighlight } from "react-native";
 import { ListItem, Avatar, Text } from "react-native-elements";
-import Modal from "modal-react-native-web";
 
 import Playground from "../../components/playground";
 import { useView, PropTypes } from "react-view";

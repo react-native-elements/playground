@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Tile, Tooltip, Text } from "react-native-elements";
+import {Tooltip, Text } from "react-native-elements";
 import Playground from "../../components/playground";
 import { useView, PropTypes } from "react-view";
 import Modal from "modal-react-native-web";
@@ -36,7 +36,7 @@ const ToolTipPlayground = () => {
         type: PropTypes.Number,
       },
       highlightColor: {
-        value: 'transparent',
+        value: "transparent",
         type: PropTypes.String,
       },
       ModalComponent: {
@@ -68,14 +68,17 @@ const ToolTipPlayground = () => {
         type: PropTypes.String,
       },
       toggleOnPress: {
+        defaultValue: true,
         value: true,
         type: PropTypes.Boolean,
       },
       withOverlay: {
+        defaultValue: true,
         value: true,
         type: PropTypes.Boolean,
       },
       withPointer: {
+        defaultValue: true,
         value: true,
         type: PropTypes.Boolean,
       },

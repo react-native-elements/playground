@@ -1,9 +1,11 @@
 export default function createReactViewBaseConfig(componentName, RNComponent) {
   if (!componentName || !RNComponent) {
-    throw new Error('createBaseComponent needs a componentName name and RNComponent');
+    throw new Error(
+      "createBaseComponent needs a componentName name and RNComponent"
+    );
   }
 
-  return ({
+  return {
     componentName,
     scope: {
       RNComponent,
@@ -13,5 +15,5 @@ export default function createReactViewBaseConfig(componentName, RNComponent) {
         named: [componentName],
       },
     },
-  });
+  };
 }
