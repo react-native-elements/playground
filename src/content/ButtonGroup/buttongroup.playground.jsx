@@ -53,7 +53,11 @@ const ButtonGroupPlayground = () => {
       },
       onPress: {
         type: PropTypes.Function,
-        value: `() => console.log("onPress()")`,
+        value: `(selectedIdx) => setSelectedIndex(selectedIdx)`,
+        propHook: {
+          what: `selectedIdx`,
+          into: `selectedIndex`,
+        }
       },
       selectMultiple: {
         type: PropTypes.Boolean,
@@ -66,10 +70,12 @@ const ButtonGroupPlayground = () => {
       selectedIndex: {
         type: PropTypes.Number,
         value: `1`,
+        stateful: true
       },
       selectedIndexes: {
         type: PropTypes.Array,
-        value: `[1,2]`,
+        value: `[]`,
+        stateful: true
       },
       selectedTextStyle: {
         type: PropTypes.Object,
