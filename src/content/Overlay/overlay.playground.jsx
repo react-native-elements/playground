@@ -11,6 +11,10 @@ const OverlayPlayground = () => {
   const params = useView({
     componentName: "Overlay",
     props: {
+      backdropStyle: {
+        type: PropTypes.Object,
+        value: `{}`,
+      },
       children: {
         type: PropTypes.ReactNode,
         value: `<Text>Some content</Text><TouchableOpacity onPress={()=>setIsVisible(!isVisible)}><Text>Click to close</Text></TouchableOpacity>`,
@@ -33,6 +37,10 @@ const OverlayPlayground = () => {
       onBackdropPress: {
         type: PropTypes.Function,
         value: `() => setIsVisible(!isVisible)`,
+      },
+      overlayStyle: {
+        type: PropTypes.Object,
+        value: `{}`,
       },
     },
     scope: {

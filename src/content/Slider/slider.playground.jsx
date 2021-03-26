@@ -11,7 +11,6 @@ import {
 import Playground from "../../components/playground";
 import { useView, PropTypes } from "react-view";
 
-
 const SliderPlayground = () => {
   const params = useView({
     componentName: "Slider",

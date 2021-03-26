@@ -57,6 +57,16 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: "1.5rem",
     minHeight: "100vh",
   },
+
+  sideListItem: {
+    transition: "0.1s all ease-in",
+    "&:hover": {
+      borderRight: "5px solid #2089dc",
+    },
+    "&:focus": {
+      borderRight: "5px solid #2089dc",
+    },
+  },
 }));
 
 function ResponsiveDrawer(props) {
@@ -64,21 +74,29 @@ function ResponsiveDrawer(props) {
   const classes = useStyles();
   const theme = useTheme();
   const [mobileOpen, setMobileOpen] = React.useState(false);
+  const [selectedIndex, setSelectedIndex] = React.useState(-1);
 
   const handleDrawerToggle = (value) => {
-    if(value === false){
+    if (value === false) {
       setMobileOpen(false);
     } else {
       setMobileOpen(true);
     }
   };
 
+  const handleListItemClick = (event, index) => {
+    setSelectedIndex(index);
+  };
+
   const drawer = (
     <div>
       <div style={{ padding: "0.5rem" }}>
-        <Link to="/">
-          <Typography style={{ fontWeight: 100 }} variant="h5">
-            Playground 🚀
+        <Link to="/" onClick={() => handleDrawerToggle(false)}>
+          <Typography variant="h5">
+            Playground{" "}
+            <span role="img" aria-label="playground">
+              🚀
+            </span>
           </Typography>
         </Link>
       </div>
@@ -89,7 +107,13 @@ function ResponsiveDrawer(props) {
             to={elm.path}
             onClick={() => handleDrawerToggle(false)}
           >
-            <ListItem button key={elm.name}>
+            <ListItem
+              button
+              key={elm.name}
+              selected={selectedIndex === index}
+              onClick={(event) => handleListItemClick(event, index)}
+              className={classes.sideListItem}
+            >
               <ListItemText primary={elm.name} />
             </ListItem>
           </Link>
@@ -121,7 +145,11 @@ function ResponsiveDrawer(props) {
             </Typography>
           </Link>
           <div style={{ marginLeft: "auto" }}>
-            <a href="https://reactnativeelements.com/" target="_blank">
+            <a
+              href="https://reactnativeelements.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Button color="inherit">Docs</Button>
             </a>
             <IconButton
