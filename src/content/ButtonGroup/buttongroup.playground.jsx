@@ -1,7 +1,5 @@
 import * as React from "react";
-import { useState } from "react";
-import { View } from "react-native";
-import { ButtonGroup, Text } from "react-native-elements";
+import { ButtonGroup} from "react-native-elements";
 
 import Playground from "../../components/playground";
 import { useView, PropTypes } from "react-view";

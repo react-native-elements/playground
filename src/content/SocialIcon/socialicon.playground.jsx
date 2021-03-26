@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Tile, Tooltip, Text, SocialIcon } from "react-native-elements";
+import { SocialIcon } from "react-native-elements";
 import Playground from "../../components/playground";
 import { useView, PropTypes } from "react-view";
 

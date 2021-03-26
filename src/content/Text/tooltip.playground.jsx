@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Tile, Tooltip, Text } from "react-native-elements";
+import { Text } from "react-native-elements";
 import Playground from "../../components/playground";
 import { useView, PropTypes } from "react-view";
 

@@ -1,6 +1,4 @@
 import * as React from "react";
-import { useState } from "react";
-import { View } from "react-native";
 import { Image } from "react-native-elements";
 
 import Playground from "../../components/playground";
