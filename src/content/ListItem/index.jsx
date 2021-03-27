@@ -1,7 +1,5 @@
-import React, { lazy, Suspense } from "react";
+import React, { lazy } from "react";
 import { importMDX } from "mdx.macro";
-
-import PropDrawer from "../../components/PropDrawer";
 
 import Playground from "./listitem.playground.jsx";
 
