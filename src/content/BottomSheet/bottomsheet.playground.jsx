@@ -26,7 +26,7 @@ const BottomSheetPlayground = () => {
       containerStyle: {
         value: `{}`,
         type: PropTypes.Object,
-      }
+      },
     },
     scope: {
       BottomSheet,

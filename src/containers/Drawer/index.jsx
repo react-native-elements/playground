@@ -76,7 +76,7 @@ function ResponsiveDrawer(props) {
   const [selectedIndex, setSelectedIndex] = React.useState(-1);
 
   const handleDrawerToggle = (value) => {
-    if(value === false){
+    if (value === false) {
       setMobileOpen(false);
     } else {
       setMobileOpen(true);
@@ -91,7 +91,6 @@ function ResponsiveDrawer(props) {
     <div>
       <div style={{ padding: "0.5rem" }}>
         <Link to="/" onClick={() => handleDrawerToggle(false)}>
-          {/* <Typography variant="h5" style={{ fontStyle: "bold",'font-family': "aerial"}}>Playground</Typography> */}
           <Typography variant="h5">Playground <span role="img" aria-label="playground" >🚀</span></Typography>
         </Link>
       </div>
@@ -147,8 +146,10 @@ function ResponsiveDrawer(props) {
               React Native Elements
             </Typography>
           </Link>
+
           <div style={{ marginLeft: "auto" ,fontSize: "calc(1rem + 6 * ((100vw - 320px) / 680))"}}>
             <a href="https://reactnativeelements.com/" target="_blank" rel="noopener noreferrer">
+
               <Button color="inherit">Docs</Button>
             </a>
             <IconButton
