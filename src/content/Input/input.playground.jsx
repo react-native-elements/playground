@@ -1,6 +1,4 @@
 import * as React from "react";
-import { useState } from "react";
-import { View } from "react-native";
 import { Input } from "react-native-elements";
 import Icon from "react-native-vector-icons/dist/MaterialCommunityIcons";
 import Playground from "../../components/playground";
