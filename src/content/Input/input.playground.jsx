@@ -69,7 +69,7 @@ const InputPlayground = () => {
       },
       rightIcon: {
         type: PropTypes.ReactNode,
-        value: `<Icon name="close" size={20}/>`,
+        value: `<Icon name="close" size={20} onPress={()=>{setValue("")}}/>`,
       },
       rightIconContainerStyle: {
         type: PropTypes.Object,
@@ -87,6 +87,17 @@ const InputPlayground = () => {
       placeholder: {
         type: PropTypes.String,
         value: "Enter Name",
+      },
+      value: {
+        type: PropTypes.String,
+        value: "",
+        stateful: true,
+        hidden: true,
+      },
+      onChange: {
+        type: PropTypes.Function,
+        value: `(e)=>{setValue(e.target.value)}`,
+        hidden: true,
       },
     },
     scope: {
