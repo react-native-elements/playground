@@ -63,8 +63,9 @@ const SocialIconlayground = () => {
         value: `() => console.log("onPress()")`,
       },
       raised: {
+        defaultValue: true,
         type: PropTypes.Boolean,
-        value: false,
+        value: true,
       },
       style: {
         type: PropTypes.Object,
