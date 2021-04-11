@@ -17,7 +17,6 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import { Button, Container } from "@material-ui/core";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
-
 import Navigation from "../Navigation";
 import { Link } from "react-router-dom";
 import { Components_Index } from "../Navigation";
@@ -131,20 +130,36 @@ function ResponsiveDrawer(props) {
       <AppBar position="fixed" className={classes.appBar}>
         <Toolbar>
           <IconButton
-            color="inherit"
+            color="primary"
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
             className={classes.menuButton}
           >
-            <MenuIcon />
+            <MenuIcon style={{ color: "white" }} />
           </IconButton>
           <Link to="/">
-            <Typography variant="h6" noWrap>
+            <Typography
+              variant="h4"
+              noWrap
+              //  style={{ fontStyle: "bold",'font-family': "Aerial"}}
+              style={{
+                marginLeft: "auto",
+                fontSize: "calc(1rem + 6 * ((100vw - 320px) / 680))",
+                fontStyle: "Bold",
+                marginLeft: "auto",
+              }}
+            >
               React Native Elements
             </Typography>
           </Link>
-          <div style={{ marginLeft: "auto" }}>
+
+          <div
+            style={{
+              marginLeft: "auto",
+              fontSize: "calc(1rem + 6 * ((100vw - 320px) / 680))",
+            }}
+          >
             <a
               href="https://reactnativeelements.com/"
               target="_blank"

@@ -10,16 +10,18 @@ function HomePage() {
       <Grid container spacing={5} justify="center" alignItems="center">
         <Grid item md={6} sm={12}>
           <Typography
-            variant="h2"
+            variant="h1"
             style={{
-              fontSize: "calc(2rem + 6 * ((100vw - 320px) / 680))",
+              fontSize: "calc(4rem + 6 * ((100vw - 320px) / 680))",
+              fontStyle : "bold"
             }}
           >
-            Exploring possibilities
+            Exploring 
+            Possibilities 
           </Typography>
           <Typography
-            variant="h6"
-            style={{ fontWeight: "200", fontStyle: "italic" }}
+            variant="h4"
+            style={{ fontWeight: "25", fontStyle: "italic"}}
           >
             with React Native Elements
           </Typography>
@@ -32,17 +34,12 @@ function HomePage() {
       </Grid>
       <div style={{ width: "100%", textAlign: "center", marginBottom: "2rem" }}>
         <Link to="/explore">
-          <Button variant="outlined" color="secondary">
-            <Typography variant="h6">
-              Explore Now{" "}
-              <span role="img" aria-label="explore">
-                🌇
-              </span>
-            </Typography>
+          <Button variant="outlined" color="Primary">
+            <Typography variant="h6"> Explore Now</Typography>
           </Button>
         </Link>
       </div>
-      <Grid container spacing={1} justify="center">
+      <Grid clasname={'image'} container spacing={1} justify="center">
         {FEATURES_LIST.map((feature, idx) => {
           return (
             <Grid item xs={6} md={4} lg={3} key={idx}>
@@ -60,21 +57,38 @@ function HomePage() {
         style={{ justifyContent: "space-evenly" }}
       >
         <Grid item xs={12} md={7} lg={6}>
-          <Typography variant="h5">Why?</Typography>
-          <Typography>
+          <Typography variant="h5"
+           style={{
+            textAlign : "centre",
+            
+          }}>
+            Why?
+            </Typography>
+          <Typography
+          style={{
+            textAlign : "centre",
+           
+          }}>
             React Native Elements houses a lot of components, and these
             components come with a lot of customisation and tweaks via props.
             Sometimes the user gets confused and wastes a lot of time in
             achieving the desired result.
             <br />
             We came across a lot of such questions every day and sometimes user
-            reports bugs which aren't bugs but just improper
+            reports bugs which aren't bugs but just improper 
             implementation/usage of the components.
+           
           </Typography>
         </Grid>
         <Grid item xs={12} md={5} lg={5}>
-          <Typography variant="h5">How it solves the problem?</Typography>
-          <Typography>
+          <Typography variant="h5"
+           style={{
+            textAlign : "centre",
+          }}>How it solves the problem?</Typography>
+          <Typography  
+          style={{
+            textAlign : "centre",
+          }}>
             With Playground, users can explore components and tweak them as per
             their use-case and generate production-ready code. Or they can
             explore new possibilities with the components and improve the
