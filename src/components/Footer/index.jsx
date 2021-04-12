@@ -1,13 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import {
-  Paper,
-  Grid,
-  ListItem,
-  Typography,
-  Button,
-  Divider,
-} from "@material-ui/core";
+import { Grid, Typography, Divider } from "@material-ui/core";
 import pjson from "../../../package.json";
 import styles from "./Footer.module.css";
 

@@ -1,7 +1,4 @@
 import React from "react";
-import clsx from "clsx";
-import { makeStyles } from "@material-ui/core/styles";
-
 import { Drawer, Fab } from "@material-ui/core";
 
 export default function TemporaryDrawer(props) {

@@ -1,10 +1,7 @@
 import * as React from "react";
-import { useState } from "react";
-import { View } from "react-native";
 import { Rating } from "react-native-elements";
 import Playground from "../../components/playground";
 import { useView, PropTypes } from "react-view";
-import SocialIconPlayground from ".";
 
 const RatingPlayground = () => {
   const params = useView({
