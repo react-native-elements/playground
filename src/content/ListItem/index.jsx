@@ -11,6 +11,11 @@ export default function ListItemPlayground() {
   return (
     <div>
       <Playground />
+      <Suspense fallback={<div>Loading...</div>}>
+        <PropDrawer>
+          <Content />
+        </PropDrawer>
+      </Suspense>
     </div>
   );
 }

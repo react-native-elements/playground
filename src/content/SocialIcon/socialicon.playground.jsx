@@ -3,7 +3,7 @@ import { SocialIcon } from "react-native-elements";
 import Playground from "../../components/playground";
 import { useView, PropTypes } from "react-view";
 
-const SocialIconlayground = () => {
+const SocialIconPlayground = () => {
   const params = useView({
     componentName: "SocialIcon",
     props: {
@@ -102,4 +102,4 @@ const SocialIconlayground = () => {
   );
 };
 
-export default SocialIconlayground;
+export default SocialIconPlayground;

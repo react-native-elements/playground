@@ -1,5 +1,5 @@
 import * as React from "react";
-import {Tooltip, Text } from "react-native-elements";
+import { Tooltip, Text } from "react-native-elements";
 import Playground from "../../components/playground";
 import { useView, PropTypes } from "react-view";
 import Modal from "modal-react-native-web";
