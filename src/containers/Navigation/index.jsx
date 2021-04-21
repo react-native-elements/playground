@@ -25,6 +25,7 @@ import Text from "../../content/Text";
 import SocialIcon from "../../content/SocialIcon";
 import Slider from "../../content/Slider";
 import SearchBar from "../../content/SearchBar";
+import SpeedDial from "../../content/SpeedDial";
 import Rating from "../../content/Rating";
 import AirbnbRating from "../../content/AirbnbRating";
 import Pricing from "../../content/Pricing";
@@ -150,6 +151,11 @@ export const Components_Index = [
     name: "SocialIcon",
     component: SocialIcon,
     path: "/social-icon",
+  },
+  {
+    name: "SpeedDial",
+    component: SpeedDial,
+    path: "/speed-dial",
   },
   {
     name: "Text",
