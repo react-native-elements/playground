@@ -4,10 +4,20 @@ const {
   addBabelPlugins,
   babelInclude,
   addWebpackAlias,
+  addBabelPresets,
 } = require("customize-cra");
 
 module.exports = override(
   ...addBabelPlugins("@babel/plugin-proposal-class-properties"),
+  ...addBabelPresets([
+    "@babel/preset-env",
+    {
+      targets: {
+        browsers: ["> 1%", "last 2 versions"],
+      },
+      modules: "commonjs",
+    },
+  ]),
   babelInclude(
     [
       path.resolve(__dirname, "node_modules/react-native-elements"),
