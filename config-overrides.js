@@ -4,9 +4,22 @@ const {
   addBabelPlugins,
   babelInclude,
   addWebpackAlias,
+  addBabelPresets,
 } = require("customize-cra");
 
 module.exports = override(
+  ...addBabelPresets([
+    "@babel/preset-env",
+    {
+      useBuiltIns: "entry",
+      corejs: { version: "3" },
+      targets: {
+        browsers: ["> 1%", "last 2 versions"],
+        node: true,
+      },
+      modules: "auto",
+    },
+  ]),
   ...addBabelPlugins("@babel/plugin-proposal-class-properties"),
   babelInclude(
     [
