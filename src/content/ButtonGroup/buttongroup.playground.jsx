@@ -1,5 +1,5 @@
 import * as React from "react";
-import { ButtonGroup} from "react-native-elements";
+import { ButtonGroup } from "react-native-elements";
 
 import Playground from "../../components/playground";
 import { useView, PropTypes } from "react-view";
@@ -57,7 +57,7 @@ const ButtonGroupPlayground = () => {
         propHook: {
           what: `selectedIdx`,
           into: `selectedIndex`,
-        }
+        },
       },
       selectMultiple: {
         type: PropTypes.Boolean,
@@ -70,12 +70,12 @@ const ButtonGroupPlayground = () => {
       selectedIndex: {
         type: PropTypes.Number,
         value: `1`,
-        stateful: true
+        stateful: true,
       },
       selectedIndexes: {
         type: PropTypes.Array,
         value: `[]`,
-        stateful: true
+        stateful: true,
       },
       selectedTextStyle: {
         type: PropTypes.Object,
