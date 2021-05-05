@@ -22,7 +22,7 @@
     "react-native-web": "^0.12.0",
     "react-native-web-linear-gradient": "^1.1.1",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.1",
+    "react-scripts": "4.0.3",
     "react-view": "^2.3.2"
   },
   "scripts": {
@@ -54,9 +54,9 @@
   "devDependencies": {
     "@babel/plugin-proposal-class-properties": "^7.10.4",
     "@babel/preset-env": "^7.13.15",
-    "@testing-library/jest-dom": "^5.12.0",
-    "@testing-library/react": "^11.2.6",
-    "@testing-library/user-event": "^13.1.5",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
     "customize-cra": "^1.0.0",
     "gh-pages": "^3.1.0",
     "husky": "^4.3.8",
