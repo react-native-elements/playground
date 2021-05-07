@@ -10,6 +10,7 @@ const {
 module.exports = override(
   ...addBabelPresets([
     "@babel/preset-env",
+    "@babel/preset-react",
     {
       useBuiltIns: "entry",
       corejs: { version: "3" },
