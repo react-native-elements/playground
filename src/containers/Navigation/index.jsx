@@ -38,6 +38,7 @@ import CheckBox from "../../content/CheckBox";
 import BottomSheet from "../../content/BottomSheet";
 import ButtonGroup from "../../content/ButtonGroup";
 import Divider from "../../content/Divider";
+import SwitchComponent from "../../content/Switch";
 
 export const Components_Index = [
   {
@@ -150,6 +151,11 @@ export const Components_Index = [
     name: "SocialIcon",
     component: SocialIcon,
     path: "/social-icon",
+  },
+  {
+    name: "Switch",
+    component: SwitchComponent,
+    path: "/switch",
   },
   {
     name: "Text",
