@@ -30,6 +30,7 @@ import AirbnbRating from "../../content/AirbnbRating";
 import Pricing from "../../content/Pricing";
 import Overlay from "../../content/Overlay";
 import ListItem from "../../content/ListItem";
+import LinearProgress from "../../content/LinearProgress";
 import Input from "../../content/Input";
 import Image from "../../content/Image";
 import Icon from "../../content/Icon";
@@ -106,7 +107,11 @@ export const Components_Index = [
     component: Input,
     path: "/input",
   },
-
+  {
+    name: "LinearProgress",
+    component: LinearProgress,
+    path: "/linear-progress",
+  },
   {
     name: "ListItem",
     component: ListItem,
