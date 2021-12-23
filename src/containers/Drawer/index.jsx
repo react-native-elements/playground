@@ -15,6 +15,8 @@ import ListItemText from "@material-ui/core/ListItemText";
 import MenuIcon from "@material-ui/icons/Menu";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
+import Brightness2Icon from "@material-ui/icons/Brightness2";
+import WbSunnyIcon from "@material-ui/icons/WbSunny";
 import { Button, Container } from "@material-ui/core";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 
@@ -70,14 +72,14 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function ResponsiveDrawer(props) {
-  const { window } = props;
+  const { window, darkState, handleThemeChange } = props;
   const classes = useStyles();
   const theme = useTheme();
   const [mobileOpen, setMobileOpen] = React.useState(false);
   const [selectedIndex, setSelectedIndex] = React.useState(-1);
 
   const handleDrawerToggle = (value) => {
-    if(value === false){
+    if (value === false) {
       setMobileOpen(false);
     } else {
       setMobileOpen(true);
@@ -92,7 +94,12 @@ function ResponsiveDrawer(props) {
     <div>
       <div style={{ padding: "0.5rem" }}>
         <Link to="/" onClick={() => handleDrawerToggle(false)}>
-          <Typography variant="h5">Playground <span role="img" aria-label="playground" >🚀</span></Typography>
+          <Typography variant="h5">
+            Playground{" "}
+            <span role="img" aria-label="playground">
+              🚀
+            </span>
+          </Typography>
         </Link>
       </div>
       <List>
@@ -140,7 +147,14 @@ function ResponsiveDrawer(props) {
             </Typography>
           </Link>
           <div style={{ marginLeft: "auto" }}>
-            <a href="https://reactnativeelements.com/" target="_blank" rel="noopener noreferrer">
+            <IconButton style={{ color: "white" }} onClick={handleThemeChange}>
+              {darkState ? <WbSunnyIcon /> : <Brightness2Icon />}
+            </IconButton>
+            <a
+              href="https://reactnativeelements.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Button color="inherit">Docs</Button>
             </a>
             <IconButton

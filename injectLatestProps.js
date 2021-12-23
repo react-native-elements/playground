@@ -21,7 +21,7 @@ try {
   result = findRemoveSync("./src/content", { dir: "Props" });
   console.log("✔️ Removed ?: ", result);
 
-  /* Point 3 */
+  // Point 3
   execSync(
     "git clone https://github.com/react-native-elements/react-native-elements --depth=1",
     (err, stdout, stderr) => {
@@ -38,7 +38,7 @@ try {
 
   // Point 4
   cpDir.sync(
-    "./react-native-elements/website/docs/props",
+    "./react-native-elements/website/docs/main/props",
     "./src/content/Props"
   );
   console.log("✔️ Copied Props to src/content/Props");

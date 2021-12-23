@@ -30,13 +30,20 @@ function HomePage() {
           </div>
         </Grid>
       </Grid>
+
       <div style={{ width: "100%", textAlign: "center", marginBottom: "2rem" }}>
         <Link to="/explore">
           <Button variant="outlined" color="secondary">
-            <Typography variant="h6">Explore Now <span role="img" aria-label="explore">🌇</span></Typography>
+            <Typography variant="h6">
+              Explore Now{" "}
+              <span role="img" aria-label="explore">
+                🌇
+              </span>
+            </Typography>
           </Button>
         </Link>
       </div>
+
       <Grid container spacing={1} justify="center">
         {FEATURES_LIST.map((feature, idx) => {
           return (
@@ -46,7 +53,6 @@ function HomePage() {
           );
         })}
       </Grid>
-
       <Divider style={{ margin: "3vh 0" }} />
       <Grid
         container

@@ -1,18 +1,7 @@
 import * as React from "react";
-import { useState } from "react";
-import { View } from "react-native";
-import {
-  Tile,
-  Tooltip,
-  Text,
-  SocialIcon,
-  Slider,
-  SearchBar,
-  Icon,
-} from "react-native-elements";
+import { SearchBar } from "react-native-elements";
 import Playground from "../../components/playground";
 import { useView, PropTypes } from "react-view";
-import SocialIconPlayground from ".";
 
 const SearchBarPlayground = () => {
   const params = useView({

@@ -1,12 +1,17 @@
 import * as React from "react";
-import { Tile, Tooltip, Text, SocialIcon } from "react-native-elements";
+import { SocialIcon } from "react-native-elements";
 import Playground from "../../components/playground";
 import { useView, PropTypes } from "react-view";
 
-const SocialIconlayground = () => {
+const SocialIconPlayground = () => {
   const params = useView({
     componentName: "SocialIcon",
     props: {
+      activityIndicatorStyle: {
+        type: PropTypes.Object,
+        value: ``,
+        description: "Style to render when in loading state"
+      },
       button: { type: PropTypes.Boolean, value: false },
       Component: {
         type: PropTypes.ReactNode,
@@ -75,7 +80,6 @@ const SocialIconlayground = () => {
         value: "GitHub",
         description: "title if made into a button.",
       },
-
       type: {
         type: PropTypes.String,
         value: "github",
@@ -102,4 +106,4 @@ const SocialIconlayground = () => {
   );
 };
 
-export default SocialIconlayground;
+export default SocialIconPlayground;
