@@ -9,13 +9,14 @@ import {
   Placeholder,
 } from "react-view";
 
-export default ({ params }) => {
+export default ({ params, containerStyle = {} }) => {
   return (
     <React.Fragment>
       <div
         style={{
           border: "1px dashed #ccc",
           position: "relative",
+          ...containerStyle,
         }}
       >
         <Compiler
