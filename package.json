@@ -35,7 +35,13 @@
     "prepare": "node injectLatestProps.js",
     "deploy": "gh-pages -d build",
     "postinstall": "patch-package",
-    "format": "prettier --write \"./src\""
+    "prettier": "prettier --ignore-path .gitignore \"**/*.+(js|jsx|json)\" --ignore-unknown",
+    "format": "npm run prettier -- --write",
+    "check-format": "npm run prettier -- --check",
+    "lint": "eslint --ignore-path .gitignore . --fix",
+    "check-lint": "eslint --ignore-path .gitignore .",
+    "make-consistent": "npm run format && npm run lint",
+    "validate": "npm run check-format && npm run check-lint"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -54,9 +60,15 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/preset-env": "^7.13.12",
     "customize-cra": "^1.0.0",
+    "eslint-plugin-jest": "^24.3.5",
+    "eslint-plugin-json": "^2.1.2",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.23.2",
+    "eslint-plugin-react-hooks": "^4.2.0",
     "gh-pages": "^3.1.0",
-    "husky": "^4.3.8",
+    "husky": "^6.0.0",
     "lint-staged": "^10.5.4",
     "patch-package": "^6.2.2",
     "postinstall-postinstall": "^2.1.0",
@@ -70,7 +82,7 @@
   },
   "lint-staged": {
     "*.{js,jsx,css,md,json}": [
-      "prettier --write --ignore-unknown",
+      "npm run validate",
       "git add"
     ]
   }

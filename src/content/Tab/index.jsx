@@ -2,16 +2,14 @@ import React, { lazy, Suspense } from "react";
 import { importMDX } from "mdx.macro";
 
 import PropDrawer from "../../components/PropDrawer";
-import Spinner from "../../containers/Spinner";
-import Playground from "./icon.playground.jsx";
+import Playground from "./tab.playground.jsx";
+const Content = lazy(() => importMDX("../Props/tab.md"));
 
-const Content = lazy(() => importMDX("../Props/icon.md"));
-
-export default function IconPlayground() {
+export default function TabPlayground() {
   return (
     <div>
       <Playground />
-      <Suspense fallback={<Spinner />}>
+      <Suspense fallback={<div>Loading...</div>}>
         <PropDrawer>
           <Content />
         </PropDrawer>
