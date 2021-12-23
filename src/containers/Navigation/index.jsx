@@ -30,6 +30,7 @@ import AirbnbRating from "../../content/AirbnbRating";
 import Pricing from "../../content/Pricing";
 import Overlay from "../../content/Overlay";
 import ListItem from "../../content/ListItem";
+import LinearProgress from "../../content/LinearProgress";
 import Input from "../../content/Input";
 import Image from "../../content/Image";
 import Icon from "../../content/Icon";
@@ -39,6 +40,7 @@ import BottomSheet from "../../content/BottomSheet";
 import ButtonGroup from "../../content/ButtonGroup";
 import Divider from "../../content/Divider";
 import FAB from "../../content/FAB";
+import SwitchComponent from "../../content/Switch";
 
 export const Components_Index = [
   {
@@ -111,7 +113,11 @@ export const Components_Index = [
     component: Input,
     path: "/input",
   },
-
+  {
+    name: "LinearProgress",
+    component: LinearProgress,
+    path: "/linear-progress",
+  },
   {
     name: "ListItem",
     component: ListItem,
@@ -158,6 +164,11 @@ export const Components_Index = [
     path: "/social-icon",
   },
   {
+    name: "Switch",
+    component: SwitchComponent,
+    path: "/switch",
+  },
+  {
     name: "Text",
     component: Text,
     path: "/text",
@@ -202,6 +213,7 @@ export default function App() {
           </Helmet>
           <ExplorePage />
         </Route>
+
         <Route>
           <HomePage />
         </Route>

@@ -2,11 +2,10 @@ import React, { lazy, Suspense } from "react";
 import { importMDX } from "mdx.macro";
 
 import PropDrawer from "../../components/PropDrawer";
-import Playground from "./text.playground.jsx";
+import Playground from "./linearprogress.playground";
+const Content = lazy(() => importMDX("../Props/linearProgress.md"));
 
-const Content = lazy(() => importMDX("../Props/text.md"));
-
-export default function TextPlayground() {
+export default function LinearProgressPlayground() {
   return (
     <div>
       <Playground />
