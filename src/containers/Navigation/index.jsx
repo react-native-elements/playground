@@ -207,6 +207,7 @@ export default function App() {
           </Helmet>
           <ExplorePage />
         </Route>
+
         <Route>
           <HomePage />
         </Route>
