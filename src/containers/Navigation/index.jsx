@@ -19,6 +19,7 @@ import Avatar from "../../content/Avatar";
 import Button from "../../content/Button";
 import Badge from "../../content/Badge";
 import Tile from "../../content/Tile";
+import Tab from "../../content/Tab";
 import Card from "../../content/Card";
 import ToolTip from "../../content/ToolTip";
 import Text from "../../content/Text";
@@ -158,6 +159,11 @@ export const Components_Index = [
     path: "/social-icon",
   },
   {
+    name: "Tab",
+    component: Tab,
+    path: "/tab",
+  },
+  {    
     name: "Switch",
     component: SwitchComponent,
     path: "/switch",
