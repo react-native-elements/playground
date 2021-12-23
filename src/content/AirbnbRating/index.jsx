@@ -3,7 +3,7 @@ import { importMDX } from "mdx.macro";
 
 import PropDrawer from "../../components/PropDrawer";
 
-import Playground from "./searchbar.playground.jsx";
+import Playground from "./airbnbrating.playground.jsx";
 const Content = lazy(() => importMDX("../Props/rating.md"));
 
 export default function AirbnbPlayground() {
