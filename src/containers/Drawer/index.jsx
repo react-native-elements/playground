@@ -15,6 +15,8 @@ import ListItemText from "@material-ui/core/ListItemText";
 import MenuIcon from "@material-ui/icons/Menu";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
+import Brightness2Icon from "@material-ui/icons/Brightness2";
+import WbSunnyIcon from "@material-ui/icons/WbSunny";
 import { Button, Container } from "@material-ui/core";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 
@@ -70,7 +72,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function ResponsiveDrawer(props) {
-  const { window } = props;
+  const { window, darkState, handleThemeChange } = props;
   const classes = useStyles();
   const theme = useTheme();
   const [mobileOpen, setMobileOpen] = React.useState(false);
@@ -145,6 +147,9 @@ function ResponsiveDrawer(props) {
             </Typography>
           </Link>
           <div style={{ marginLeft: "auto" }}>
+            <IconButton style={{ color: "white" }} onClick={handleThemeChange}>
+              {darkState ? <WbSunnyIcon /> : <Brightness2Icon />}
+            </IconButton>
             <a
               href="https://reactnativeelements.com/"
               target="_blank"

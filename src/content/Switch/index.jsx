@@ -2,16 +2,14 @@ import React, { lazy, Suspense } from "react";
 import { importMDX } from "mdx.macro";
 
 import PropDrawer from "../../components/PropDrawer";
-import Spinner from "../../containers/Spinner";
-import Playground from "./airbnbrating.playground.jsx";
+import Playground from "./switch.playground.jsx";
+const Content = lazy(() => importMDX("../Props/switch.md"));
 
-const Content = lazy(() => importMDX("../Props/rating.md"));
-
-export default function AirbnbPlayground() {
+export default function SwitchPlayground() {
   return (
     <div>
       <Playground />
-      <Suspense fallback={<Spinner />}>
+      <Suspense fallback={<div>Loading...</div>}>
         <PropDrawer>
           <Content />
         </PropDrawer>

@@ -3,7 +3,7 @@ import { importMDX } from "mdx.macro";
 
 import PropDrawer from "../../components/PropDrawer";
 import Spinner from "../../containers/Spinner";
-import Playground from "./tooltip.playground.jsx";
+import Playground from "./text.playground.jsx";
 
 const Content = lazy(() => importMDX("../Props/text.md"));
 
