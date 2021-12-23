@@ -19,6 +19,7 @@ import Avatar from "../../content/Avatar";
 import Button from "../../content/Button";
 import Badge from "../../content/Badge";
 import Tile from "../../content/Tile";
+import Tab from "../../content/Tab";
 import Card from "../../content/Card";
 import ToolTip from "../../content/ToolTip";
 import Text from "../../content/Text";
@@ -39,6 +40,7 @@ import CheckBox from "../../content/CheckBox";
 import BottomSheet from "../../content/BottomSheet";
 import ButtonGroup from "../../content/ButtonGroup";
 import Divider from "../../content/Divider";
+import FAB from "../../content/FAB";
 import SwitchComponent from "../../content/Switch";
 
 export const Components_Index = [
@@ -82,6 +84,11 @@ export const Components_Index = [
     name: "Divider",
     component: Divider,
     path: "/divider",
+  },
+  {
+    name: "FAB",
+    component: FAB,
+    path: "/fab",
   },
 
   {
@@ -158,6 +165,11 @@ export const Components_Index = [
     path: "/social-icon",
   },
   {
+    name: "Tab",
+    component: Tab,
+    path: "/tab",
+  },
+  {    
     name: "Switch",
     component: SwitchComponent,
     path: "/switch",
