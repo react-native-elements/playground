@@ -1,0 +1,14 @@
+.paperPosition {
+    height: 60px;
+    padding: 5px 10px;
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+.arrow {
+    position: absolute;
+    right: 10px;
+}
+.gridContainer {
+    margin-top: 10;
+}
