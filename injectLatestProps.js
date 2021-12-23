@@ -12,9 +12,9 @@ exec(
     console.log(`stderr: ${stderr}`);
   }
 );
-
 exec(
-  "cp -r ./react-native-elements/website/docs/props ./src/content/Props",
+  "cp -r ./react-native-elements/website/docs/main/props ./src/content/Props"
+),
   (err, stdout, stderr) => {
     if (err) {
       // node couldn't execute the command
