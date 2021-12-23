@@ -1,6 +1,7 @@
 {
   "recommendations": [
     "esbenp.prettier-vscode",
-    "vscodeshift.material-ui-snippets"
+    "vscodeshift.material-ui-snippets",
+    "dbaeumer.vscode-eslint"
   ]
 }
