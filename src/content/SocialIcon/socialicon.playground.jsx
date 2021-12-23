@@ -7,6 +7,11 @@ const SocialIconPlayground = () => {
   const params = useView({
     componentName: "SocialIcon",
     props: {
+      activityIndicatorStyle: {
+        type: PropTypes.Object,
+        value: ``,
+        description: "Style to render when in loading state"
+      },
       button: { type: PropTypes.Boolean, value: false },
       Component: {
         type: PropTypes.ReactNode,
@@ -75,7 +80,6 @@ const SocialIconPlayground = () => {
         value: "GitHub",
         description: "title if made into a button.",
       },
-
       type: {
         type: PropTypes.String,
         value: "github",
