@@ -40,6 +40,7 @@ import CheckBox from "../../content/CheckBox";
 import BottomSheet from "../../content/BottomSheet";
 import ButtonGroup from "../../content/ButtonGroup";
 import Divider from "../../content/Divider";
+import FAB from "../../content/FAB";
 import SwitchComponent from "../../content/Switch";
 
 export const Components_Index = [
@@ -83,6 +84,11 @@ export const Components_Index = [
     name: "Divider",
     component: Divider,
     path: "/divider",
+  },
+  {
+    name: "FAB",
+    component: FAB,
+    path: "/fab",
   },
 
   {
