@@ -3,7 +3,7 @@ import { importMDX } from "mdx.macro";
 
 import PropDrawer from "../../components/PropDrawer";
 import Playground from "./switch.playground.jsx";
-const Content = lazy(() => importMDX("../Props/Switch.md"));
+const Content = lazy(() => importMDX("../Props/Switch.mdx"));
 
 export default function SwitchPlayground() {
   return (

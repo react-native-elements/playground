@@ -5,7 +5,7 @@ import PropDrawer from "../../components/PropDrawer";
 import Spinner from "../../containers/Spinner";
 import Playground from "./slider.playground.jsx";
 
-const Content = lazy(() => importMDX("../Props/Slider.md"));
+const Content = lazy(() => importMDX("../Props/Slider.mdx"));
 
 export default function SliderPlayground() {
   return (

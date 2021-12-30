@@ -4,7 +4,7 @@ import { importMDX } from "mdx.macro";
 import PropDrawer from "../../components/PropDrawer";
 import Playground from "./speeddial.playground";
 
-const Content = lazy(() => importMDX("../Props/Speeddial.md"));
+const Content = lazy(() => importMDX("../Props/Speeddial.mdx"));
 
 export default function SpeedDialPlayground() {
   return (

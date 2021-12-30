@@ -5,7 +5,7 @@ import PropDrawer from "../../components/PropDrawer";
 import Playground from "./rating.playground.jsx";
 import Spinner from "../../containers/Spinner";
 
-const Content = lazy(() => importMDX("../Props/Rating.md"));
+const Content = lazy(() => importMDX("../Props/Rating.mdx"));
 
 export default function RatingPlayground() {
   return (

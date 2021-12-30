@@ -5,7 +5,7 @@ import PropDrawer from "../../components/PropDrawer";
 import Spinner from "../../containers/Spinner";
 import Playground from "./buttongroup.playground.jsx";
 
-const Content = lazy(() => importMDX("../Props/Button_group.md"));
+const Content = lazy(() => importMDX("../Props/Button_group.mdx"));
 
 export default function ButtonGroupPlayground() {
   return (

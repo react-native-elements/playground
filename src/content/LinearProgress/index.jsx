@@ -3,7 +3,7 @@ import { importMDX } from "mdx.macro";
 
 import PropDrawer from "../../components/PropDrawer";
 import Playground from "./linearprogress.playground";
-const Content = lazy(() => importMDX("../Props/LinearProgress.md"));
+const Content = lazy(() => importMDX("../Props/LinearProgress.mdx"));
 
 export default function LinearProgressPlayground() {
   return (

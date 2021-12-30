@@ -5,7 +5,7 @@ import PropDrawer from "../../components/PropDrawer";
 import Spinner from "../../containers/Spinner";
 import Playground from "./checkbox.playground.jsx";
 
-const Content = lazy(() => importMDX("../Props/Checkbox.md"));
+const Content = lazy(() => importMDX("../Props/Checkbox.mdx"));
 
 export default function CheckBoxPlayground() {
   return (

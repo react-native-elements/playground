@@ -5,7 +5,7 @@ import PropDrawer from "../../components/PropDrawer";
 import Spinner from "../../containers/Spinner";
 import Playground from "./searchbar.playground.jsx";
 
-const Content = lazy(() => importMDX("../Props/Searchbar.md"));
+const Content = lazy(() => importMDX("../Props/Searchbar.mdx"));
 
 export default function SearchBarPlayground() {
   return (
