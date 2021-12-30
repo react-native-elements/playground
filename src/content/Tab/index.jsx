@@ -3,7 +3,7 @@ import { importMDX } from "mdx.macro";
 
 import PropDrawer from "../../components/PropDrawer";
 import Playground from "./tab.playground.jsx";
-const Content = lazy(() => importMDX("../Props/tab.md"));
+const Content = lazy(() => importMDX("../Props/Tab.md"));
 
 export default function TabPlayground() {
   return (

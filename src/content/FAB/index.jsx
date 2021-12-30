@@ -4,7 +4,7 @@ import { importMDX } from "mdx.macro";
 import PropDrawer from "../../components/PropDrawer";
 import Playground from "./fab.playground";
 
-const Content = lazy(() => importMDX("../Props/fab.md"));
+const Content = lazy(() => importMDX("../Props/Fab.md"));
 
 export default function FabPlayground() {
   return (

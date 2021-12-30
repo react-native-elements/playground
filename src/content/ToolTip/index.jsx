@@ -5,7 +5,7 @@ import PropDrawer from "../../components/PropDrawer";
 import Spinner from "../../containers/Spinner";
 import Playground from "./tooltip.playground.jsx";
 
-const Content = lazy(() => importMDX("../Props/tooltip.md"));
+const Content = lazy(() => importMDX("../Props/Tooltip.md"));
 
 export default function ToolTipPlayground() {
   return (

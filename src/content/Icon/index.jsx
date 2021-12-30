@@ -5,7 +5,7 @@ import PropDrawer from "../../components/PropDrawer";
 import Spinner from "../../containers/Spinner";
 import Playground from "./icon.playground.jsx";
 
-const Content = lazy(() => importMDX("../Props/icon.md"));
+const Content = lazy(() => importMDX("../Props/Icon.md"));
 
 export default function IconPlayground() {
   return (
