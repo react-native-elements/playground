@@ -5,7 +5,7 @@ import PropDrawer from "../../components/PropDrawer";
 import Spinner from "../../containers/Spinner";
 import Playground from "./pricing.playground.jsx";
 
-const Content = lazy(() => importMDX("../Props/Pricing.mdx"));
+const Content = lazy(() => importMDX("../Props/PricingCard.mdx"));
 
 export default function PricingPlayground() {
   return (
