@@ -37,7 +37,7 @@ try {
   console.log("✔️ Cloned react-native-elements");
 
   execSync(
-    "sed -i '/## Props/,$!d' ./react-native-elements/website/docs/main*.mdx",
+    "sed -i '/## Props/,$!d' ./react-native-elements/website/docs/main/*.mdx",
     (err, stdout, stderr) => {
       if (err) {
         // node couldn't execute the command
