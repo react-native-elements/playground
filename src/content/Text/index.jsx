@@ -5,7 +5,7 @@ import PropDrawer from "../../components/PropDrawer";
 import Spinner from "../../containers/Spinner";
 import Playground from "./text.playground.jsx";
 
-const Content = lazy(() => importMDX("../Props/text.md"));
+const Content = lazy(() => importMDX("../Props/Text.mdx"));
 
 export default function TextPlayground() {
   return (

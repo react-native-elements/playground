@@ -5,7 +5,7 @@ import PropDrawer from "../../components/PropDrawer";
 import Spinner from "../../containers/Spinner";
 import Playground from "./overlay.playground.jsx";
 
-const Content = lazy(() => importMDX("../Props/overlay.md"));
+const Content = lazy(() => importMDX("../Props/Overlay.mdx"));
 
 export default function OverlayPlayground() {
   return (

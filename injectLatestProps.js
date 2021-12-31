@@ -38,11 +38,10 @@ try {
 
   // Point 4
   cpDir.sync(
-    "./react-native-elements/website/docs/main",
+    "./react-native-elements/website/docs/main/props",
     "./src/content/Props"
   );
   console.log("✔️ Copied Props to src/content/Props");
 } catch (err) {
   console.error(err);
-  return;
 }
