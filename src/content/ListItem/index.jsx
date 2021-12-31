@@ -5,7 +5,7 @@ import PropDrawer from "../../components/PropDrawer";
 import Playground from "./listitem.playground.jsx";
 import Spinner from "../../containers/Spinner";
 
-const Content = lazy(() => importMDX("../Props/listitem.md"));
+const Content = lazy(() => importMDX("../Props/ListItem.mdx"));
 
 export default function ListItemPlayground() {
   return (

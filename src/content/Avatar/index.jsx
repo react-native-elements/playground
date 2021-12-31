@@ -5,7 +5,7 @@ import PropDrawer from "../../components/PropDrawer";
 import Spinner from "../../containers/Spinner";
 import Playground from "./avatar.playground.jsx";
 
-const Content = lazy(() => importMDX("../Props/avatar.md"));
+const Content = lazy(() => importMDX("../Props/Avatar.mdx"));
 
 export default function Avatar() {
   return (
