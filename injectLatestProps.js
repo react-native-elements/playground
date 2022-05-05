@@ -36,6 +36,19 @@ try {
   );
   console.log("✔️ Cloned react-native-elements");
 
+  execSync(
+    "sed -i '/## Props/,$!d' ./react-native-elements/website/docs/main/*.mdx",
+    (err, stdout, stderr) => {
+      if (err) {
+        // node couldn't execute the command
+        return;
+      }
+      // the *entire* stdout and stderr (buffered)
+      console.log(`stdout: ${stdout}`);
+      console.log(`stderr: ${stderr}`);
+    }
+  );
+  
   // Point 4
   cpDir.sync(
     "./react-native-elements/website/docs/main",
